@@ -1,0 +1,147 @@
+enable  : true
+list :
+  - name : "Mobile Technologies"
+    techLogo:
+      - techItem : "/img/technologies/swift.png"
+        alternative: "Mobile App Technologies - Swift"
+      - techItem : "/img/technologies/flutter.png"
+        alternative: "Mobile App Technologies - Flutter"
+      - techItem : "/img/technologies/react-native.png"
+        alternative: "Mobile App Technologies - React Native"
+      - techItem : "/img/technologies/phone-gap.png"
+        alternative: "Mobile App Technologies - PhoneGap"
+      - techItem : "/img/technologies/java.png"
+        alternative: "Mobile App Technologies - Java"
+      - techItem : "/img/technologies/cordova.png"
+        alternative: "Mobile App Technologies - Cordova"
+
+  - name : "Open Source Development Frameworks"
+    techLogo:
+      - techItem : "/img/technologies/django.png"
+        alternative: "Open source Development Technologies - Django"
+      - techItem : "/img/technologies/meteor.png"
+        alternative: "Meteor Image"
+        
+
+  - name : "Web Development Technologies"
+    techLogo:
+      - techItem : "/img/technologies/bootstrap.png"
+        alternative: "Web Development Technologies - Bootstrap"
+      - techItem : "/img/technologies/angular.png"
+        alternative: "Web Development Technologies - Angular"
+      - techItem : "/img/technologies/express-js.png"
+        alternative: "Web Development Technologies - ExpressJS"
+      - techItem : "/img/technologies/html-css.png"
+        alternative: "Web Development Technologies - HTMLcss"
+      - techItem : "/img/technologies/node-js.png"
+        alternative: "Web Development Technologies - NodeJS"
+      - techItem : "/img/technologies/python.png"
+        alternative: "Web Development Technologies - Python"
+      - techItem : "/img/technologies/react-js.png"
+        alternative: "Web Development Technologies - ReactJS"
+
+  - name : "Backend Technologies"
+    techLogo:
+      - techItem : "/img/technologies/firebase.png"
+        alternative: "Backend Technologies used - Firebase"
+      - techItem : "/img/technologies/mongo-db.png"
+        alternative: "Backend Technologies used - MongoDB"
+      - techItem : "/img/technologies/mysql.png"
+        alternative: "Backend Technologies used - MySQL"
+      - techItem : "/img/technologies/node-js.png"
+        alternative: "Backend Technologies used - NodeJS"
+      - techItem : "/img/technologies/php.png"
+        alternative: "Backend Technologies used - PHP"
+      - techItem : "/img/technologies/postgresql.png"
+        alternative: "Backend Technologies used - PostgreSQL"
+      - techItem : "/img/technologies/graphql.png"
+        alternative: "Backend Technologies used - GraphQL"
+      - techItem : "/img/technologies/apollo.png"
+        alternative: "Backend Technologies used - Apollo"
+     
+
+  - name : "UI/UX Technologies"
+    techLogo:
+      - techItem : "/img/technologies/photoshop.png"
+        alternative: "UI UX Technologies used - Photoshop"
+      - techItem : "/img/technologies/illustrator.png"
+        alternative: "UI UX Technologies used - Illustrators"
+      - techItem : "/img/technologies/xd.png"
+        alternative: "UI UX Technologies used - Adobe XD"
+
+  - name : "CMS Web Development Technologies"
+    techLogo:
+      - techItem : "/img/technologies/wordPress.png"
+        alternative: "CMS Web Development - Wordpress"
+      - techItem : "/img/technologies/joomla.png"
+        alternative: "CMS Web Development - Joomla"
+
+  - name : "Headless CMS"
+    techLogo:
+      - techItem : "/img/technologies/forestry.png"
+        alternative: "Headless CMS Technologies - Forestry"
+      - techItem : "/img/technologies/graphcms.png"
+        alternative: "Headless CMS Technologies - Grapgh CMS"
+      - techItem : "/img/technologies/strapi.png"
+        alternative: "Headless CMS Technologies - Strapi"
+
+  - name : "Static Site Generators"
+    techLogo:
+      - techItem : "/img/technologies/hugo.png"
+        alternative: "Static Site Technologies - Hugo"
+      - techItem : "/img/technologies/gatsby.png"
+        alternative: "Static Site Technologies - Gatsby"
+
+  - name : "Voice App Development"
+    techLogo:
+      - techItem : "/img/technologies/alexaSkillKit.png"
+        alternative: "Voice App Development Technologies - Alexa Skill Kit"
+
+  - name : "Testing Tools"
+    techLogo:
+      - techItem : "/img/technologies/selenium.png"
+        alternative: "Testing Tools used- Selenium"
+
+  - name : "Cloud Technologies"
+    techLogo:
+      - techItem : "/img/technologies/amazonWeb.png"
+        alternative: "Cloud Technologies Used - Amazon Web Services"
+
+  - name : "Devops Tools  & Technologies"
+    techLogo:
+      - techItem : "/img/technologies/docker.png"
+        alternative: "Devops Tools and Technologies - Docker"
+      - techItem : "/img/technologies/jenkins.png"
+        alternative: "Devops Tools and Technologies - Jenkins"
+
+  - name : "Code Management Tools"
+    techLogo:
+      - techItem : "/img/technologies/github.png"
+        alternative: "Code Management Tools - Github"
+      - techItem : "/img/technologies/bitbucket.png"
+        alternative: "Code Management Tools - Bitbucket"
+
+  - name : "Project Management Tools"
+    techLogo:
+      - techItem : "/img/technologies/trello.png"
+        alternative: "Project Management Tools - Trello"
+      - techItem : "/img/technologies/jira.png"
+        alternative: "Project Management Tools - Jira"
+      - techItem : "/img/technologies/teamwork.png"
+        alternative: "Project Management Tools - Teamwork"
+      - techItem : "/img/technologies/basecamp.png"
+        alternative: "Project Management Tools - BaseCamp"
+  
+  - name : "Communication"
+    techLogo:
+      - techItem : "/img/technologies/slack.png"
+        alternative: "Communication Tools - Slack"
+      - techItem : "/img/technologies/skype.png"
+        alternative: "Communication Tools - Skype"
+      - techItem : "/img/technologies/gogleHangout.png"
+        alternative: "Communication Tools - GoogleHangout"
+
+  - name : "Chatbot App Development"
+    techLogo:
+      - techItem : "/img/technologies/chatbot.jpg"
+        alternative: "Chatbot App Development Tools - DialogFlow"

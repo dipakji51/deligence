@@ -1,0 +1,10 @@
+enable : true
+title : "Want to discuss"
+smallText : "how we can"
+boldText : "triple your monthly revenue"
+appointmentButton:
+  btnText : "Book An Appointment"
+  link : "https://calendly.com/deligence/30min/?month=2019-12"
+requestButton:
+  btnText : "Send Your Request"
+  link : "/contact-us/"

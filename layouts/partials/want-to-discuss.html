@@ -1,0 +1,24 @@
+<div class="wantToDiscuss yellow-bg pt-4 pb-4 pl-5 pr-5">
+    {{ with .Site.Data.wantToDiscuss }}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="light-black-text"> {{ .title}} </h2>
+                <p class="light-black-text"> {{ .smallText }} <span class="blue-text"> {{ .boldText }} </span>
+                </p>
+            </div>
+            <div class="col-sm-6 d-flex align-items-center justify-content-end">
+                {{ with .appointmentButton }}
+                <a href="{{ .link | relURL }}" target="_blank" class="theme-btn blue-btn pl-5 pr-5 pt-3 pb-3 text-white">
+                    {{ .btnText }}
+                </a>
+                {{ end }}
+                <span class="pl-4 pr-4 light-black-text"> or </span>
+                {{ with .requestButton }}
+                <a href="{{ .link | relURL }}" class="theme-btn black-btn pl-5 pr-5 pt-3 pb-3"> {{ .btnText }}</a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</div>

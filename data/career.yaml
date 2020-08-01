@@ -1,0 +1,170 @@
+whychooseus:
+  - title : Why Choose Us for Your Career?
+    subtitle : Collaborate to Innovate
+    text: "We work with International Clients from over 30+ countries, who come to us with unique business ideas. We’ve built a team that 
+    delivers great work. We do impromptu brainstorm sessions, scout meetings to bring creative solutions to desk every day.  
+    Our culture provides a platform to Team Members/Employees where they can explore their full potential."
+    subtitle2: Perks 
+    text2: The team that celebrates together stays together. We celebrate company wins, employee birthdays, month success, and cultural events. One thing is sure, and if you are in, you will enjoy one party every month. 
+    text3: We provide PF and ESI. Salary always gets credited to your account on time. 
+    text4: Employees spend 7% of their day commuting to the office. So we made sure we don’t add to the percentage by keeping it farther. We are located at the Centre which has connectivity with metro and is at walking distance.
+    image : "../img/career/why-choose-us.png" 
+    alternative: "Why Choose us - Career at Deligence Technologiess"
+
+dtPoints :
+  - title : Deligence Technologies
+    points :
+      - item : No One Work For Just Money.
+      - item : People Work For Future And For Their Self Expression.
+      - item : This Is The Principle We Follow
+      - item : While Recruiting And Career Development Of Our Team Members.
+    image : "../img/career/dt.png"
+    alternative: "Career at Deligence Technologies"
+
+doingatDT:
+  - title : What You'll Be Doing At Deligence Technologies
+    list :
+      - item : Deligence Technologies invests in the growth of its team members. We do internal as well as external employee trainings.
+      - item : Our engineers take care of each and every step of 'Software Development Life Cycle'.
+      - item : The team member(s) start with the interview process with the potential client.
+      - item : The team members once hired by the client - do daily/weekly meeting with the client to understand the requirements and give demo to the client. The team member tests their own code, document the code and maintains the test and the live servers.
+      - item :  We ensure that our engineers have gotten the necessary training and development to ensure that they can do all this with confidence.
+    image : "../img/career/what-you'll-be-doing.png"
+    alternative: "Employees at Deligence Technologies"
+
+rating :
+  - title : Ratings And Trends
+    list :
+      - name : Overall
+        active : overallRating
+        starrate:
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star-half checked"
+        points : "4.8"
+      - name : Culture & Values
+        active :
+        starrate:
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star-half checked"
+        points : "4.5"
+      - name : Work/Life Balance
+        active :
+        starrate:
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star-half checked"
+        points : "4.6"
+      - name : Senior Management
+        active :
+        starrate:
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+        points : "4.8"
+      - name : Comp & Benefits
+        active :
+        starrate:
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star-half checked"
+        points : "4.2"
+      - name : Career Opportunities
+        active :
+        starrate:
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+          - star : "fa fa-star checked"
+        points : "4.8"
+
+teamView :
+    - title : What our Employees are saying About Us? 
+      carousel :
+          - weight : 1
+            active : "active"
+            heading : Best Company to Work For
+            subtitle : Reviewer
+            reviewerline : I have been working at Deligence Technologies full-time (Less than a year)
+            protitle : Pros
+            proline : Very Good Company, Nice Working Environment, Colleagues are co-operative, Easy to discuss top management any time
+            constitle : Cons
+            consline : There is no cons as of now.
+            advicetitle : Advice to Management
+            adviceline : Just do your best. All the best!
+          - weight : 2
+            active : ""
+            heading : Excellent work environment
+            subtitle : 
+            reviewerline : 
+            protitle : Pros
+            proline : I have been working here from last two months and i enjoying to work here. DT always pay attention to their employees and freedom to work. really a nice opportunity to work here and I will recommend
+                      this company to everyone for accelerating your career growth with good work environment.
+            constitle : Cons
+            consline : Nothing in the case of Deligence Technologies
+            advicetitle : Advice to Management
+            adviceline : Good Management Team
+          - weight : 3
+            active : ""
+            heading : Culture of Excellence
+            subtitle : Reviewer
+            reviewerline : I have been working at Deligence Technologies full-time (Less than a year) 
+            protitle : Pros
+            proline : Deligence rewards hard work and dedication with opportunity and growth. Deligence goes out of their way to make employees work-life comfortable and collaborative.
+            constitle : Cons
+            consline : Often Deligence is the target of wrongful assumptions and scrutiny.
+            advicetitle : ""
+            adviceline : ""
+
+recommendFriend :
+    - list :
+        - weight : 1
+          name: Recommend to a friend 
+          percentage: 100%
+        - weight : 2
+          name: CEO Approval  
+          percentage: 100%
+        - weight : 3
+          name: Positive Business Outlook
+          percentage: 84%
+
+interviewProcess :
+    - title : INTERVIEW PROCESS
+      subtitle : the interview process takes around 4 hours time.
+      image : "../img/career/interviewProcess.jpg"
+      alternative: "Deligence Technologies interview process"
+      item :
+        - number : 1
+          name : Aptitude Test + Technical written Test
+          text : "(SQL Queries & For loops)"
+        - number : 2
+          name : HR Interview 
+          text : 
+        - number : 3
+          name : Technical Interview
+          text : "at times there are two round of technical interviews"
+      
+whoCanApply :
+    - title : WHO CAN APPLY
+      list :
+        - weight : 1
+          text :  Are you result oriented? 
+        - weight : 2 
+          text : Are you honest and transparent?
+        - weight : 3
+          text : Do you prefer steady personal and professional growth rather than fast track glory?
+        - weight : 4
+          text : Are you an adaptable person?
+      subtitle: If yes, scroll down to our job opening sections to apply. We are eagerly waiting for your application!

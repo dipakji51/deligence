@@ -1,0 +1,36 @@
+<div class="rightSideBar">
+
+    {{ partial "widgets/search.html" . }}
+    {{ partial "widgets/socialshare.html" . }}
+    {{ partial "widgets/recentPost.html" . }}
+    {{ range .Site.Data.widgets.portfolio }}
+    <div class="mt-5 sidePortfolio">
+        <div class="sideHeading mb-4">
+            <h1> {{ .title }} </h1>
+        </div>
+        <div class="portfolioImg">
+            <img src="{{ .image | relURL }}" alt="Check our Portfolio" class="img-fluid w-100"/>
+            <a href="{{ .btnLink | relURL}}" class="w-100 pt-3 pb-3 text-center light-black-bg d-block text-white"> {{ .btntext }} </a>
+        </div>
+    </div>
+    {{ end }}
+    {{ range .Site.Data.widgets.social }}
+    <div class="sideSocial mt-5 ">
+        <div class="sideHeading mb-4">
+            <h1> {{ .title}} </h1>
+        </div>
+        <ul>
+            <!--   {{ range .icons}}
+              <li><a href="{{ .link | relURL }}" target="_blank"> <i class="{{ .fa  }}" aria-hidden="true"></i> </a></li>
+            {{ end }} -->
+            <li> <a href="https://www.facebook.com/deligencetechnologies" target="_blank"> <i class="fa fa-facebook"></i> </a> </li>
+                            <li> <a href="https://www.linkedin.com/company/deligencetechnologies" target="_blank"> <i class="fa fa-linkedin"></i> </a> </li>
+                            <li> <a href="https://twitter.com/deligence1" target="_blank"> <i class="fa fa-twitter"></i> </a> </li>
+                            <!-- <li> <a href="https://www.instagram.com/deligencetechnologies/" target="_blank"> <i class="fa fa-instagram"></i> </a> </li> -->
+                           
+                            <li> <a href="skype:sanjay.deligence" target="_blank"> <i class="fa fa-skype"></i> </a> </li>
+                             <li> <a href="https://github.com/DeligenceTechnologies/" target="_blank"> <i class="fa fa-github"></i> </a> </li>
+        </ul>
+    </div>
+    {{ end }}
+</div>

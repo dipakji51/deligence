@@ -1,0 +1,169 @@
+.cookiealert {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    color: #ecf0f1;
+    background: rgba(10,10,10,.76); }
+
+.cookiealert.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.cookiealert a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.cookiealert .acceptcookies {
+    margin-left: 10px;
+    vertical-align: baseline;
+}
+
+
+
+.share-box {
+    
+    margin-top: 3rem;
+    position: relative;
+   
+}
+
+.share-title {
+    color: #010101;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+    top: 5px;
+    text-transform: uppercase;
+}
+
+.share-art {
+    float: right;
+    padding: 0;
+    padding-top: 0;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+}
+
+.share-art a {
+    color: #fff;
+    padding: 5px 8px;
+    margin-left: 4px;
+    border-radius: 2px;
+    display: inline-block;
+    margin-right: 0;
+}
+
+.share-art .fac-art {
+    background: #3b5998;
+        margin: 10px 5px;
+}
+
+
+
+.share-art .twi-art {
+    background: #00acee;
+    margin: 10px 5px;
+}
+
+.share-art .goo-art {
+    background: #db4a39;
+    margin: 10px 5px;
+}
+
+.share-art .pin-art {
+    background: #CA2127;
+    margin: 10px 5px;
+}
+
+.share-art .lin-art {
+    background: #0077B5;
+    margin: 10px 5px;
+}
+
+
+.share-art a:link, .share-art a:hover, .share-art a:visited {
+        text-decoration: none;}
+
+
+.light-blue-bg .clientWords-right .what-our{padding-bottom: 27px;
+letter-spacing: 1.8px;
+font-size: 36px;
+font-weight: 500;
+}
+
+
+.light-blue-bg .clientWords-left .gdword{font-size: 130px;
+    font-weight: 600;
+    z-index: 1;
+    letter-spacing: 4.2px;
+    position: relative;
+    line-height: .9em;}
+
+ 
+
+.portfolioIntro .smalldescription .cdcyn{background-image: url("../../img/portfolio/codecanyon-logo.png"); /* The image used */
+  width: 20px;
+  height: 20px; 
+  margin: 5px;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; }
+
+
+.sec-padding .countsItem{ text-align: center;
+    max-width: 15%;
+    min-width: 15%;
+    margin: 10px 20px;
+    }
+
+.sec-padding .countsItem .countsImg{    background: #5188c7;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 27% 0px;
+    }
+
+
+.sec-padding .countsItem .countsImg img{max-width: 50px;min-width: 50px;
+    display: block;
+    margin: 0 auto;
+    }
+
+.sec-padding .countsItem .desc{font-size: 17px;
+    font-weight: 400;
+}
+
+.blog-content p{letter-spacing: 1px;}
+.recent-post .media .media-body a p{letter-spacing: 1px;}
+
+
+
+@media only screen and (max-width: 568px){
+ .awardsImg{height:auto !important;margin-bottom: 15px !important;}    
+.inner-header.mobile-bg{background-size: cover !important;height: 230px !important;}
+.inner-header h1{ padding-top:0px !important;}
+.service-thumb{min-height: 426px !important;}
+.clientWords-right .carousel-indicators{bottom: -2% !important;}
+.sec-padding .countsItem{max-width: 100%;min-width: 100%;}
+.sec-padding .countsItem .countsImg{padding: 0px;}
+.sec-padding .countsItem .countsImg img{padding: 15% 0px;}
+}
+
+

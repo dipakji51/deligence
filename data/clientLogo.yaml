@@ -1,0 +1,21 @@
+item:
+  - weight: 1
+    image: "/img/partners/1.jpg"
+    url: "#"
+    alternative: "Ariane"
+  - weight: 2
+    image: "/img/partners/2.jpg"
+    url: "#" 
+    alternative: "University of Delhi"
+  - weight: 3
+    image: "/img/partners/3.jpg"
+    url: "#" 
+    alternative: "Digital Ocean"
+  - weight: 4
+    image: "/img/partners/4.jpg"
+    url: "#" 
+    alternative: "Quick Pay"
+  - weight: 5
+    image: "/img/partners/5.jpg"
+    url: "#" 
+    alternative: "Factile"

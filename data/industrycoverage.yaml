@@ -1,0 +1,30 @@
+item:
+  - weight: 1
+    image: "/img/industry/1.png"
+    title: "Education"
+    link: "/industries/education/"
+    alternative: "Education App Development - Industry Coverage"
+
+  - weight: 2
+    image: "/img/industry/2.png"
+    title: "Fitness"
+    link: "/industries/fitness/"
+    alternative: "Fitness App Development - Industry Coverage"
+
+  - weight: 3
+    image: "/img/industry/3.png"
+    title: "Healthcare and Medical Tourism"
+    link: "/industries/healthcare-and-medical-tourism/"
+    alternative: "Healthcare App Development - Industry Coverage"
+
+  - weight: 4
+    image: "/img/industry/4.png"
+    title: "Social Networking App Development"
+    link: "/industries/social-networking-app-development/"
+    alternative: "Social Networking App Development - Industry Coverage"
+
+  - weight: 5
+    image: "/img/industry/5.png"
+    title: "Travel & Hospitality"
+    link: "/industries/travel-and-hospitality/"
+    alternative: "Travel & Hospitality App Development - Industry Coverage"

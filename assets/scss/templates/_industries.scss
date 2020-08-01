@@ -1,0 +1,200 @@
+.industriesWrap {
+    padding: 20px 0px;
+}
+
+.industry-item {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    h2 {
+        font-size: 20px;
+        text-align: center;
+        padding: 15px 10px;
+        position: absolute;
+        text-align: center;
+        color: $white;
+        bottom: 0;
+        margin: 0 auto;
+        width: 100%;
+        width: 100%;
+        letter-spacing: 1.8px;
+        background: $lightBlue-color;
+    }
+    &:before {
+        display: block;
+        background: rgba(81, 136, 199, 0.55);
+        content: "";
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        z-index: 1;
+    }
+    .industry-title {
+        padding: 0 3rem;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+        left: 0;
+        top: 1.8rem;
+        z-index: 2;
+        h4 {
+        color: $white;
+        }
+        span {
+            color: $yellow-color;
+            text-transform: uppercase;
+        }
+    }
+    .popup-img {
+        display: block;
+        font-size: 18px;
+        color: $lightBlack-color;
+        background: $white;
+        padding: 10px 20px;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        position: absolute;
+        bottom: 3.9rem;
+        right: 3rem;
+        z-index: 500;
+    }
+    &:hover {
+        h2{
+          display: none;
+        }
+        &:before {
+            opacity: 1;
+            visibility: visible;
+        }
+        .industry-title {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        .popup-img {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}
+
+.popup-link {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    color: $lightBlack-color;
+    background: $white;
+    padding: 10px 20px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    position: absolute;
+    bottom: 3.9rem;
+    left: 3rem;
+    z-index: 300;
+    &:before {
+        display: block;
+        content: "";
+        height: 1px;
+        width: 3rem;
+        background: rgba(255, 255, 255, 0.3);
+        position: absolute;
+        top: 50%;
+        left: -3rem;
+    }
+    &:hover {
+        background: $yellow-color;
+        color: $lightBlack-color;
+    }
+}
+
+.industry-item:hover .popup-link {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+.industry-content {
+    position:relative;
+    color:#000;
+    img{
+        padding: 15px 0px;
+    }
+    h1{
+        color: $lightBlue-color;
+        padding:10px 0px;
+    }
+    h2{
+        color: $lightBlue-color;
+        padding:5px 0px;
+    }
+    h3{
+        color:$lightBlack-color;
+        padding:10px 0px;
+    }
+    p{
+        color:$lightBlack-color;
+        padding-top: 5px;
+        text-align: justify;
+    }
+    strong{
+        font-weight: 500;
+    }
+    ul{
+        margin: 0px;
+        padding: 10px 0px 10px 0px;
+        list-style: none;
+        li{
+            position: relative;
+            padding-left: 28px;
+            line-height: 25px;
+            padding-bottom: 15px;
+            color:$lightBlack-color;
+            &:before {
+                position: absolute;
+                top: 6px;
+                left: 0;
+                content: "\f054";
+                color: #5188c7;
+                font: 18px/1 FontAwesome;
+            }
+            p {
+                padding:0px;
+                margin:0px;
+            }
+        }
+    }
+    a{
+        color: $lightBlue-color;
+        &:hover{
+            color:$lightBlack-color;
+        }
+    }
+}
+
+.industry-project {
+    border: $lightBlue-color solid 3px;
+    background: $white;
+    padding: 40px 20px;
+    width: 80%;
+    border-radius: 6px;
+    margin: 0 auto;
+}

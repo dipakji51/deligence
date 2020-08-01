@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+{{ partial "breadcrumbs.html" . }}
+
+<div class="container">
+    <div class="content pt-5 pb-5">
+        {{ .Content }}
+    </div>
+</div>
+<div class="wantToDiscuss light-blue-bg mt-5 pt-5 pb-5 pl-5 pr-5">
+    {{ with .Site.Data.wantToDiscuss }}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="text-white"> {{ .title}} </h2>
+                <p class="text-white"> {{ .smallText }} <span class="yellow-text"> {{ .boldText }}</span> </p>
+            </div>
+            <div class="col-sm-6 d-flex align-items-center justify-content-end">
+                {{ with .appointmentButton }}
+                <a href="{{ .link | relURL }}" target="_blank" class="theme-btn yellow-btn pl-5 pr-5 pt-3 pb-3 light-black-text">
+                    {{ .btnText }}
+                </a>
+                {{ end }}
+                <span class="pl-4 pr-4 text-white"> or </span>
+                {{ with .requestButton }}
+                <a href="{{ .link | relURL }}" class="theme-btn bg-white light-blue-bg pl-5 pr-5 pt-3 pb-3">  {{ .btnText }} </a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</div>
+{{ range .Site.Data.footer.portfolio }}  
+<section class="bg-dark portfolioFooterBG footerBGHeight w-100 home"  style="background-image: url('{{ .image | relURL }}');">
+    <div class="footer-overlay d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h2 class="text-white text-center"> {{ .title }} </h2>
+            <a href="{{ .link | relURL }} "> <span class="text-center arrowicon"> <i class="fa fa-angle-down"></i> </span> </a>
+        </div>
+    </div> 
+</section>
+{{ end }}
+{{ end }}

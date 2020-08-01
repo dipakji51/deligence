@@ -1,0 +1,30 @@
+item:
+  - weight: 1
+    image: "/img/counts/fa-globe.png"     
+    title: "30+"
+    decription : "Countries"
+    alternative:  "Countries"
+
+  - weight: 2
+    image: "/img/counts/app-delivered.png" 
+    title: "100+"
+    decription : "Apps Delivered"
+    alternative: "Apps Delivered"
+
+  - weight: 3
+    image: "/img/counts/fa-client.png"
+    title: "99%"
+    decription : "Success Rate"
+    alternative: "Success Rate" 
+
+  - weight: 4
+    image: "/img/counts/team.png"
+    title: "22"
+    decription : "IT Professional"
+    alternative: "IT Professional" 
+
+  - weight: 5
+    image: "/img/counts/experience.png"
+    title: "80+"
+    decription : "Years of Combined Experience" 
+    alternative: "Years of Combined Experience" 

@@ -1,0 +1,32 @@
+<section class="homeServices vh-100 position-relative ">
+    <div class="overlayBG"></div>
+    <div class="container-fluid h-100 m-0 p-0">
+        <div class="row h-100">
+            <div class="col-sm-5 d-flex align-items-center justify-content-center h-100">
+                {{ with .Site.Data.homepage.services }}
+                <div class="h-services-title">
+                    <h1 class="text-white">{{ .title }}</h1>
+                    <p class="text-white">{{ .smallText }}</p>
+                </div>
+                {{ end }}
+            </div>
+            <div class="col-sm-7 h-100">
+                <div class="h-Services-Right h-100 bg-white">
+                    <div class="row m-0 p-0 h-100 d-flex align-content-stretch flex-wrap">
+                        {{ range first 6 .Site.Data.homeservices.item  }}
+                        <div class="col-sm-6 m-0 p-0">
+                            <a href="{{ .url | relURL }}">
+                                <div class="service-list h-100 d-flex flex-wrap align-content-center justify-content-center">  
+                                    <img src="{{ .image  | relURL }}" class="img-fluid"/>
+                                    <h3>{{ .title }}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

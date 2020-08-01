@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+{{ partial "breadcrumbs.html" . }}
+
+<section class="pt-5 pb-5 pattern01">
+    <div class="container">
+        <div class="row">
+           {{ range $index, $element := .Site.Data.references.list }}
+            <div class="col-sm-6">
+                <div class="card reference-block">
+                    <div class="card-header">{{ .name }}</div>
+                    <div class="card-body">
+                        <p><strong>Address : </strong> <br />
+                            {{ .address }}
+                        </p>
+                        <p><strong>Tel: </strong> {{ .tel }}</p>
+                        <p><strong>Email: </strong> <a href="mailto:{{ .mailLink}}">{{ .email }} </a> </p>
+                        <p><strong>Website: </strong> <a href="{{ .webLink | relURL }}" target="_blank"
+                                rel="noopener noreferrer">{{ .website }}</a></p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ range .Site.Data.footer.home }}  
+    <section class="bg-dark portfolioFooterBG footerBGHeight w-100 home"  style="background-image: url('{{ .image | relURL }}');">
+        <div class="footer-overlay d-flex align-items-center justify-content-center">
+            <div class="container">
+                <h2 class="text-white text-center"> {{ .title }} </h2>
+                <a href="{{ .link | relURL }} "> <span class="text-center arrowicon"> <i class="fa fa-angle-down"></i> </span> </a>
+            </div>
+        </div> 
+    </section>
+{{ end }}
+
+{{ end }}

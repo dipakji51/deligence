@@ -1,0 +1,42 @@
+enable  : true
+thumb:
+
+  - name : "gctourism"
+    imgorder : "order-2"
+    textorder : "order-1"
+    bgImage : "/img/portfolio/gctourism-BG.png"
+    colorCode : "#5188c7"
+    sideImage : "/img/portfolio/gctourism.png"
+    logo : "/img/portfolio/gctourism-Logo.png"
+    topLine : "Bollywood Songs Quiz"
+    description : "This is a music quiz skill, which ask questions in form of the description of the song."
+    btnText : "View Details"
+    link : "https://www.gctourism.envent.ly/"
+
+  
+  - name : "Alexa Skills"
+    imgorder : "order-2"
+    textorder : "order-1"
+    bgImage : "/img/portfolio/alexa-skills-bg.png"
+    colorCode : "#5188c7"
+    sideImage : ""
+    logo : "/img/portfolio/alexa-skills.png"
+    topLine : "Bollywood Songs Quiz"
+    description : "This is a music quiz skill, which ask questions in form of the description of the song."
+    btnText : "View Details"
+    link : "/portfolio/bollywood-songs-quiz"
+
+
+  - name : "Car Auction App"
+    imgorder : "order-1"
+    textorder : "order-2"
+    bgImage : "/img/portfolio/ca-network-bg.png"
+    colorCode : "#5188c7"
+    sideImage : "/img/portfolio/ca-network-img.png"
+    logo : "/img/portfolio/ca-network.png"
+    topLine : "Car Auction App"
+    description : "Find cheap used cars for sale from bank repos, title pawn repos, police auctions, used car dealer trades, and also private seller vehicles."
+    btnText : "View Details"
+    link : "/portfolio/public-auto-auctions"
+ 
+

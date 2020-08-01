@@ -1,0 +1,49 @@
+item:
+  - weight: 1
+    image: "/img/services/mobileAppDevelopment.svg"
+    title: "Mobile App Development"
+    url: "services/mobile-apps-development"
+    decription : "Today, mobile apps and mobility solutions are taking major role in the growth and brand building of every business. Experienced in Mobile App development for iPhone as well as Android."
+    alternative: "Mobile App Development Services"
+
+  - weight: 2
+    image: "/img/services/webAppDevelopment.svg"
+    title: "Web App Development"
+    url: "services/web-development"
+    decription : "Delivering advanced web apps is what we always do! Our open source web development experts design, develop and support for all types of web apps with full transparency and control. "
+    alternative: "Web App Development Services"
+  
+  - weight: 3
+    image: "/img/services/flutterMobileAppDevelopment.svg"
+    title: "Flutter Mobile App Development"
+    url: "services/flutter-mobile-app-development"
+    decription : "Transform your Android and iOS mobile app idea using the industry’s newest yet the fastest evolving cross-platform Flutter framework."
+    alternative: "Flutter App Development Services"
+ 
+  - weight: 4
+    image: "/img/services/alexaSkillDevelopment.svg"
+    title: "Alexa Skill Development"
+    url: "services/alexa-skill-development"
+    decription : "Alexa Skill - Voice Your Business Ideas With Amazon Alexa Skills Development. Engage your customers with an Alexa skill"
+    alternative: "Alexa Skill Development Services"
+ 
+  - weight: 5
+    image: "/img/services/ui-uxDevelopment.svg"
+    title: "UI/UX Development"
+    url: "services/ui-ux-development"
+    decription : "User Experience Beyond the Superficial A user interface is considered as a mode of communication between people and their machines."
+    alternative: "Ui ux Development Services"
+  
+  - weight: 6
+    image: "/img/services/digitalMediaMarketing.svg"
+    title: "Digital Media Marketing "
+    url: "services/digital-media-marketing"
+    decription : "Marketing to place you in the hearts and minds of your customers. Digital marketing can promote your product or service while creating a lasting image of your brand among the masses."
+    alternative: "Digital Media Marketing Services"
+  
+  - weight: 7
+    image: "/img/services/chatbot.svg"
+    title: "Chatbot App Development "
+    url: "services/chatbot-app-development"
+    decription : "We incorporate machine learning in chatbot app development to provide personalised and automated product suggestions and solutions to customers. "
+    alternative: "Chatbot App Development Services"

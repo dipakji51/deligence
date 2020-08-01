@@ -1,0 +1,39 @@
+<section class="sec-padding ">
+    <div class="main-title">
+        {{ with .Site.Data.homepage.latestNews }}
+           <h1 class="text-center">{{ .title }}</h1>
+        {{ end }}
+    </div>
+    <div class="container">
+        <div class="row">
+            {{ $paginator := .Paginate (where  .Site.Pages "Type" "blog") }}
+            {{ range first 3 $paginator.Pages }}
+            <div class="col-sm-4">
+                <a href="{{ .Permalink }}" class="singleBlogWrap">
+                   <div class="blogitem-image">
+                        {{ if .Params.banner }}
+                          <img src="{{ .Params.banner | relURL }}" class="img-fluid" alt=""/>
+                        {{ else }}
+                          <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-fluid" alt=""/>
+                        {{ end }} 
+                   </div>
+                   <div class="blogitem-Info">
+                       <div class="row m-0 p-0">
+                           <div class="col-2 m-0 p-0">
+                                <div class="blogitem-date">
+                                    <p> {{ .Date.Format .Site.Params.blog_date }} <span> {{ .Date.Format .Site.Params.blog_month }} </span> </p> 
+                                </div>
+                            </div>
+                           <div class="col-10 m-0 p-0 d-flex align-items-center">
+                               <div class="blogitem-title"> 
+                                   <h5> {{ .Title }} </h5>
+                                </div>
+                           </div>
+                       </div>
+                   </div>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>  
+</section>

@@ -1,0 +1,28 @@
+enable  : true
+thumb:
+  - name : "Factile"
+    imgorder : "order-1"
+    textorder : "order-2"
+    bgImage : "/img/portfolio/factile-bg.png"
+    colorCode : "#5188c7"
+    sideImage : "/img/portfolio/factile-img.png"
+    logo : "/img/portfolio/factile.png"
+    topLine : "It's free, easy and loads of fun!"
+    description : "Factile is a free learning platform that lets teachers create engaging jeopardy-style quiz games for the classroom."
+    btnText : "View Details"
+    link : "/portfolio/factile"
+
+
+  - name : "Tuition Reviews"
+    imgorder : "order-2"
+    textorder : "order-1"
+    bgImage : "/img/portfolio/TRSG-BG.png"
+    colorCode : "#5188c7"
+    sideImage : "/img/portfolio/TRSG.png"
+    logo : "/img/portfolio/TRSG-logo.png"
+    topLine : "Rated & Reviewed"
+    description : "TuitionReviews.sg is a site for parents and learners to post ratings and reviews of tuition centres in Singapore. Share your experience"
+    btnText : "View Details"
+    link : "http://www.tuitionreviews.sg/"
+ 
+

@@ -1,0 +1,45 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94.39 72.26">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #5188c7;
+            }
+
+            .cls-2 {
+                fill: none;
+                stroke: #5188c7;
+                stroke-miterlimit: 10;
+                stroke-width: 1.53px;
+            }
+            .cls-1:hover{
+                fill:#fff;
+            }
+            .cls-2:hover{
+                stroke: #fff;
+            }
+        </style>
+    </defs>
+    <title>Web App Development</title>
+    <rect class="cls-1" x="5.54" y="4.94" width="1.91" height="1.91" />
+    <rect class="cls-1" x="9.04" y="4.94" width="1.91" height="1.91" />
+    <rect class="cls-1" x="12.55" y="4.94" width="1.91" height="1.91" />
+    <rect class="cls-1" x="7.44" y="18.83" width="20.84" height="2.61" />
+    <rect class="cls-1" x="32.21" y="18.83" width="17.25" height="2.61" />
+    <rect class="cls-1" x="7.44" y="26.55" width="56.73" height="2.7" />
+    <rect class="cls-1" x="7.44" y="52.01" width="31.18" height="2.7" />
+    <rect class="cls-1" x="7.44" y="59.65" width="47.63" height="2.7" />
+    <rect class="cls-1" x="7.44" y="33.8" width="10.51" height="13.73" />
+    <rect class="cls-1" x="23.03" y="33.8" width="10.51" height="13.73" />
+    <rect class="cls-1" x="38.62" y="33.8" width="10.51" height="13.73" />
+    <path class="cls-2"
+        d="M75.93,62.53,60.67,73l4-18.07L85.51,24a3.29,3.29,0,0,1,4.57-.88l5.81,3.91a3.29,3.29,0,0,1,.88,4.57Z"
+        transform="translate(-3.71 -14.72)" />
+    <polygon class="cls-1"
+        points="75.37 48.17 75.37 70.39 1.87 70.39 1.87 1.87 75.37 1.87 75.37 13.82 77.25 11.04 77.25 0 0 0 0 72.26 77.25 72.26 77.25 45.39 75.37 48.17" />
+    <line class="cls-2" x1="78.72" y1="13.89" x2="90.01" y2="21.44" />
+    <path class="cls-2"
+        d="M65.43,53.81s-1.2,4.51,1.9,3.56c0,0-.61,2.88,2.53,1.94,0,0-.21,2.34,2.74,1.87,0,0,0,2.15,3.35,1.54"
+        transform="translate(-3.71 -14.72)" />
+    <polygon class="cls-1" points="71.47 19.61 71.47 18.83 54.22 18.83 54.22 21.43 70.24 21.43 71.47 19.61" />
+    <polygon class="cls-1" points="76.31 12.43 76.31 11.38 0.94 11.38 0.94 13.25 75.75 13.25 76.31 12.43" />
+</svg>

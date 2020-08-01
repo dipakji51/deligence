@@ -1,0 +1,39 @@
+
+.theme-btn {
+  border-radius: 50px;
+  padding: 10px 20px!important;
+  font-size: 16px;
+  font-weight: 400;
+  @media only screen and (max-width: 568px){
+    padding:3px 5px!important;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.yellow-btn {
+    background: $yellow-color;
+    color:$lightBlack-color;
+    &:hover{
+      background: $yellow-hover-color;
+      color:$lightBlack-color;
+    }
+}
+
+.blue-btn {
+  background: $lightBlue-color;
+  color:$white;
+  &:hover{
+    background: $lightBlue-hover-color;
+    color: $white;
+  }
+}
+
+.black-btn{
+  background: $lightBlack-color;
+  color:$white;
+  &:hover{
+    background: $lightBlack-hover-color;
+    color: $white;
+  }
+}

@@ -1,0 +1,19 @@
+portfolio :
+  - title : Work Portfolio
+    image : "/img/blog/blogPortfolio.jpg"
+    btntext : View Portfolio
+    btnLink : "/portfolio"
+
+social :
+  - title: Be Social with us on
+    icons:
+      - fa : fa fa-facebook 
+        link : "https://www.facebook.com/deligencetechnologies"
+      - fa : fa fa-linkedin 
+        link : "https://www.linkedin.com/company/deligencetechnologies"
+      - fa : fa fa-twitter
+        link : "https://twitter.com/deligence1"
+      - fa : fa fa-skype
+        link : "skype:.cid.adc1f7b083c57356"
+      - fa : fa fa-github
+        link : "https://github.com/DeligenceTechnologies/" 

@@ -1,0 +1,28 @@
+<section class="sec-padding light-bg position-relative pl-4 pr-4">
+    <div class="main-title">
+        {{ with .Site.Data.homepage.clientSays }}
+          <h1 class="text-center">{{ .title }}</h1>
+        {{ end }}
+    </div>
+    <div class="container-fluid">
+        <div class="row ">
+            {{ range .Site.Data.clientSays.testimonial }}
+                <div class="col-sm-12 col-md-6 col-lg-3 ">
+                    <div class="hexaShape  d-flex align-items-center justify-content-center">
+                        <div class="hexagontent testimonial">
+                            <div class="clientImg"><img src="{{ .clientImage | relURL }}" alt="{{.alternative }}" class="img-fluid"/></div>
+                            <p>{{ .content }}</p>
+                            <h5 class="text-center">{{ .name }}</h5>
+                            <h6 class="text-center">{{ .designation }} <br/> {{ .companyName}}</h6>
+                            <div class="ratingStar">
+                                {{ range .rating }}
+                                   <span class="{{ .star }}"></span>
+                                {{ end }}
+                            </div>          
+                        </div>
+                    </div>
+                </div>    
+            {{ end }}
+        </div>
+    </div>
+</section>

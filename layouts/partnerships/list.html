@@ -1,0 +1,78 @@
+{{ define "main" }}
+
+{{ partial "breadcrumbs.html" . }}
+
+<div class="container">
+  <div class="content partnership pt-5 pb-5">
+    {{ with .Site.Data.partnership }}
+    <div class="main-title p-0">
+      <p class="text-center"> {{ .title }}</p>
+    </div>
+      
+    {{ end }}
+    <div class="row">
+      {{ range $index, $element := .Site.Data.partnership.fullwidthList }}
+        <div class="col-sm-12">
+          <div class="partnershipFullWidth">
+            <div class="partnershipLogoBox p-4 shadowEffect">
+              <img src="{{ .image | relURL }}" alt="{{.alternative }}" />
+            </div>
+            <div class="partnershipLogoText">
+              <span> {{ .name }}  </span>
+              <p>
+                {{ .description }}
+              </p> 
+            </div>
+          </div>
+        </div>
+      {{ end }}
+      {{ range $index, $element := .Site.Data.partnership.smallList }}
+        <div class="col-sm-6">
+          <div class="partnershipSingleBox">
+            <div class="partnershipLogoBox p-4 shadowEffect">
+              <img src="{{ .image | relURL }}"/>
+            </div>
+            <div class="partnershipLogoText">
+              <h3>  {{ .name }} </h3>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+<div class="wantToDiscuss light-blue-bg mt-5 pt-5 pb-5 pl-5 pr-5">
+    {{ with .Site.Data.wantToDiscuss }}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="text-white"> {{ .title}} </h2>
+                <p class="text-white"> {{ .smallText }} <span class="yellow-text"> {{ .boldText }}</span> </p>
+            </div>
+            <div class="col-sm-6 d-flex align-items-center justify-content-end">
+                {{ with .appointmentButton }}
+                <a href="{{ .link | relURL }}" target="_blank" class="theme-btn yellow-btn pl-5 pr-5 pt-3 pb-3 light-black-text">
+                    {{ .btnText }}
+                </a>
+                {{ end }}
+                <span class="pl-4 pr-4 text-white"> or </span>
+                {{ with .requestButton }}
+                <a href="{{ .link | relURL }}" class="theme-btn bg-white light-blue-bg pl-5 pr-5 pt-3 pb-3">  {{ .btnText }} </a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</div>
+{{ range .Site.Data.footer.partnership }}  
+    <section class="bg-dark portfolioFooterBG footerBGHeight w-100" style="background-image: url('{{ .image | relURL }}');">
+        <div class="footer-overlay d-flex align-items-center justify-content-center">
+            <div class="container">
+                <h2 class="text-white text-center"> {{ .title }} </h2>
+                <a href="{{ .link | relURL }} "> <span class="text-center arrowicon"> <i class="fa fa-angle-down"></i> </span> </a>
+            </div>
+        </div> 
+    </section>
+  {{ end }}
+
+{{ end }}

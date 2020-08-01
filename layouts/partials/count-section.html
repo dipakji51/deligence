@@ -1,0 +1,33 @@
+<section class="sec-padding light-bg">
+    <div class="main-title">
+        {{ with .Site.Data.homepage.counts }}
+          <h1 class="text-center">{{.title }}</h1>
+        {{ end }}
+    </div>
+    <div class="container">
+         <div class="d-flex justify-content-center flex-wrap">
+            {{ range .Site.Data.counts.list.item }}
+                
+                      <div class="countsItem">
+                       <div class="countsImg"> 
+                       <img src="{{ .image | relURL }}" alt="{{.alternative }}" class="img-fluid" />
+                      
+                        </div>
+                     
+                         <div class="">              
+                       <h2 class="mt-3 text-center">{{ .title }}</h2>            
+                       <p class="mt-0 text-center desc"> {{ .decription }} </p>
+                       </div> 
+
+                     </div>
+
+                      
+                
+            {{ end }} 
+            </div>
+                 
+    </div>   
+</section>
+
+
+

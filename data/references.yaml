@@ -1,0 +1,82 @@
+enable  : true
+list:
+  - weight: 1
+    name : "Stephen O'Brien"
+    address : "70 Haven Ave, New York NY 10032, USA"
+    tel : "+1 (212) 245 5588 x501"
+    email : "stephen [at] doqumi.com"
+    mailLink: "stephen@doqumi.com"
+    website: "www.doqumi.com"
+    webLink : "http://www.doqumi.com/"
+
+  - weight: 2
+    name : "Paolo Prestinari"
+    address : "FattoreMamma Srl, Via Guercino, 9, 20154 Milano, Italia"
+    tel : "+39-02-314639"
+    email : "paolo.prestinari [at] fattoremamma.com"
+    mailLink: "paolo.prestinari@fattoremamma.com"
+    website: "www.fattoremamma.com"
+    webLink : "http://www.fattoremamma.com/"
+
+  - weight: 3
+    name : "James Tredray"
+    address : "London, UK"
+    tel : "+44 (0)7971 628 217"
+    email : "james [at] jtcreative.co.uk"
+    mailLink: "james@jtcreative.co.uk"
+    website: "www.jtcreative.co.uk"
+    webLink : "http://www.jtcreative.co.uk/"
+
+  - weight: 4
+    name : "Raymond Robert"
+    address : "London, UK"
+    tel : "+44 (0)79 8514 9510"
+    email : "ray [at] beautyontrial.co.uk"
+    mailLink: "ray@beautyontrial.co.uk"
+    website: "www.beautyontrial.co.uk"
+    webLink : "http://www.beautyontrial.co.uk/"
+
+  - weight: 5
+    name : "Bella Procktor"
+    address : "236 Webheath, Netherwood St, London, UK NW6 2LX"
+    tel : " +44 (0)7949 570 306"
+    email : "info [at] enigma-shop.com"
+    mailLink: "info@enigma-shop.com"
+    website: "www.enigma-shop.com"
+    webLink : "http://www.enigma-shop.com/"
+
+  - weight: 6
+    name : "Randy Anderson"
+    address : "RJ Tours Management Services, 89 National Highway, Olongapo, Zambales, Philippines"
+    tel : " +63 998 537 6585"
+    email : "randy99 [at] gmail.com"
+    mailLink: "randy99@gmail.com"
+    website: "www.pinoytoptips.com"
+    webLink : "http://pinoytoptips.com/"
+
+  - weight: 7
+    name : "SAlex Khatchadourian"
+    address : " Acuwork Digital, 3355 N. White Ave  #637, La Verne, CA  91750"
+    tel : " (909) 542-8034"
+    email : "Muzeeqa [at] gmail.com"
+    mailLink: "Muzeeqa@gmail.com"
+    website: ""
+    webLink : ""
+
+  - weight: 8
+    name : "Mosongo Osong"
+    address : "Biblezon Corporation, 2022 westbury lane , Allen tx 75013"
+    tel : "214-677-5313"
+    email : "osongsholding [at] gmail.com"
+    mailLink: "osongsholding@gmail.com"
+    website: ""
+    webLink : ""
+
+  - weight: 9
+    name : "Mitch Vine"
+    address : "Toronto, Ontario, Canada"
+    tel : "214-677-5313"
+    email : ""
+    mailLink: ""
+    website: ""
+    webLink : ""

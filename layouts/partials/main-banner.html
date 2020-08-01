@@ -1,0 +1,21 @@
+<!-- Header Carousel -->
+	<div class="mainBanner vh-100">
+
+		{{ with .Site.Data.homepage.video }}
+			<div class="overlayBG"></div>
+			<video autoplay muted loop id="myVideo" alt="Deligence" width="100%" height="100%">
+				<source src="{{.videoLink | relURL }}" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+			<div class="video-overlay d-flex flex-wrap align-content-center justify-content-center">
+				<h1>{{ .title }}</h1>
+				<p>{{ .smallText }} <br/>
+					<span class="yellow-text"> {{ .yellowText }} </span>
+				</p>
+				{{ with .button }}
+				<a href="{{ .URL | relURL }}" class="yellow-btn yellow-bg light-black-text"> {{ .btnText }} </a>
+				{{ end }}
+			</div>
+		{{ end }}
+	</div>
+<!--\\ Inner Header --> 

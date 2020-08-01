@@ -1,0 +1,369 @@
+/*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+.main-menu {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#header {
+  position: fixed;
+  left: 0;
+  top: 0px;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 9998;
+  background: transparent;
+  padding-top: 10px;
+
+  @media only screen and (max-width: 568px) {
+    position: relative;
+    background: #333333;
+  }
+
+  &.header-scrolled {
+    transition: all 0.5s;
+    top: 0;
+    background: $white;
+    padding: 0px;
+    padding:5px 0px;
+
+    .logo-white {
+      display: none;
+    }
+
+    .logo-blue {
+      display: block;
+    }
+
+    .main-menu {
+      border-color: transparent;
+    }
+  }
+
+  .logo-white {
+    display: block;
+  }
+
+  .logo-blue {
+    display: none;
+  }
+}
+
+/*--------------------------------------------------------------
+    # Navigation Menu
+    --------------------------------------------------------------*/
+/* Nav Menu Essentials */
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu>li {
+  float: left;
+}
+
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  right: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+/* Nav Menu Arrows */
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 11px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+/* Nav Meu Container */
+@media (max-width: 768px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 13px 10px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+  outline: none;
+  letter-spacing: 0.6px;
+}
+
+ul.nav-menu li:last-child a {
+  background: $yellow-color;
+  color: $lightBlack-color;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 10px 25px;
+  margin-left: 10px;
+  &:hover{
+    color: $white;
+    background: $lightBlue-color;
+  }
+}
+
+#header.header-scrolled .nav-menu a {
+  color: $lightBlack-color;
+}
+
+.nav-menu a:hover {
+  color: $yellow-color;
+}
+
+#header.header-scrolled .nav-menu a:hover {
+  color: $yellow-color;
+}
+
+#header.header-scrolled .nav-menu li:last-child a:hover {
+  color: $white;
+  background: $lightBlue-color;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  right: 0;
+  z-index: 99;
+  background: $white;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.06);
+}
+
+.nav-menu ul li a {
+  padding: 13px 18px;
+  text-decoration: none;
+  display: inline-block;
+  color: $lightBlack-color;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  outline: none;
+  border-bottom: $lightWhite-color solid 2px;
+  width: 100%;
+}
+
+.nav-menu ul li a:hover,
+.nav-menu ul.subnav li:last-child a:hover {
+  background: $lightBlue-color;
+  color: $white;
+}
+
+#header .nav-menu ul li a:hover {
+  color: $white;
+}
+
+#header.header-scrolled .nav-menu ul li a:hover {
+  color: $white;
+}
+
+.nav-menu ul.subnav li:last-child a {
+  background: transparent;
+  border-radius: 0;
+  padding: 0px;
+  padding: 13px 18px;
+  margin: 0px;
+  border-bottom: none;
+}
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: absolute;
+  right: 15px;
+  z-index: 9999;
+  top: 25px;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: $white;
+  font-weight: 900;
+}
+
+@media (max-width: 991px) {
+  #mobile-nav-toggle {
+    display: inline;
+  }
+
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.8);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+  padding-top: 100px;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  font-size: 16px;
+  text-transform: uppercase;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+  font-weight: 400;
+  color: $white;
+}
+
+#mobile-nav ul li a:hover {
+  color: $white;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 10px 14px;
+  cursor: pointer;
+  color: $white;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: $yellow-color;
+}
+
+#mobile-nav ul .menu-has-children li a {
+  text-transform: none;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: $yellow-color;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: $white;
+}
+
+@media screen and (max-width: 800px) {
+  #mobile-nav-toggle {
+    top: 3%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #header {
+    top: 0;
+  }
+
+  #mobile-nav-toggle {
+    top: 3%;
+  }
+}
+.cookiealert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  color: #ecf0f1;
+  background: #000;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .acceptcookies {
+    margin-left: 10px;
+    vertical-align: baseline;
+  }
+}

@@ -1,0 +1,127 @@
+whoweare:
+  title: "Who We Are"
+  image: "/img/about/team-img.png"
+  text: "A leading Web and Mobile App Development Company based in Delhi, India, offers web and mobile app development solutions
+  across the globe. Since 2014, We are contributing to the success of various companies with our high-end services. We believe in building"
+
+  text2: "Communication, Commitment and Quality."
+  text3: "We live by these 3 key values to deliver a noteworthy project." 
+
+ourteam:
+  title: "Our Team"
+  text: "Our team is specialized in Android & iOS development, PWA development, IoT app development, Flutter App Development and Alexa Skill 
+  Development, UI/UX design Development and App Marketing. The team has served user-centric apps for various industries including 
+  Restaurants, Fitness, Education, Automotive, Travel & Tourism, Social Networking and more. The design 
+  and development team do detailed industry research and develop innovative projects to meet client requirements."
+  subtitle: "We have a defined process from onboarding to Delivering ongoing custom solutions."
+  list:
+  - weight: 1
+    text: "Sign NDA to protect client’s idea."
+  - weight: 2
+    text: "Create detailed requirement documentation that leverages us to have a clear vision of the scope of work"
+  - weight: 3
+    text: "Work on Minimum Viable Product (MVP) or Agile methodology"
+  - weight: 4
+    text: "Create wireframes, based on client’s requirements"
+  - weight: 5
+    text: "Provide complete project visibility and progress report"
+  - weight: 6
+    text: "Test and Launch the application"
+  - weight: 7
+    text: "Do App marketing"
+
+reasonDT:
+  title: "RAISON D'ÊTRE"
+  subtitle: "(REASON FOR THE EXISTENCE OF DELIGENCE TECHNOLOGIES)"
+  list:
+  - weight: 1
+    text: "We exist to provide;"
+    space: "list-space10"
+  - weight: 2
+    text: "Best in Class Services"
+    space: "list-space20"
+  - weight: 3
+    text: "Enhanced Quality of life,"
+    space: "list-space30"
+  - weight: 4
+    text: "Stakeholder Satisfaction, and "
+    space: "list-space40"
+  - weight: 5
+    text: " We build lifelong relationships"
+    space: "list-space50"
+
+lifeDT:
+  title: "Life @ Deligence"
+  subtitle: >
+    With free culture, we play, work, & communicate openly. 
+    Collaborative ideas are what we believe in.
+  team:
+    - weight: 1
+      image: "/img/about/1.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 2
+      image: "/img/about/2.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 3
+      image: "/img/about/3.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 4
+      image: "/img/about/4.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 5
+      image: "/img/about/5.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 6
+      image: "/img/about/6.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 7
+      image: "/img/about/7.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 8
+      image: "/img/about/8.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 9
+      image: "/img/about/9.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 10
+      image: "/img/about/10.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 11
+      image: "/img/about/11.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 12
+      image: "/img/about/12.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 13
+      image: "/img/about/13.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 14
+      image: "/img/about/14.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 15
+      image: "/img/about/15.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 16
+      image: "/img/about/16.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 17
+      image: "/img/about/17.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 18
+      image: "/img/about/18.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 19
+      image: "/img/about/20.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 20
+      image: "/img/about/21.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 21
+      image: "/img/about/22.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 22
+      image: "/img/about/23.jpg"
+      alternative: "Fun at Deligence Technologies"
+    - weight: 23
+      image: "/img/about/24.jpg"
+      alternative: "Fun at Deligence Technologies"

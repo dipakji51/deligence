@@ -1,0 +1,280 @@
+
+html,
+body {
+  height: 100%;
+  color:$lightBlack-color;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.vh {
+  height: 100vh;
+}
+
+
+
+.overlayBG {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+}
+
+.overlayBG:before {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  content: '';
+  /* background: url("/img/overlayer-bg.png") repeat!important; */
+  background: #0c2f557a;
+}
+
+.blueBackgroundImg {
+  background: url("../img/faqBG.jpg") center;
+  background-size: cover;
+}
+
+.inner-header{
+  h1{
+    font-weight:700;
+    color:$white;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    letter-spacing: 3.5px;
+    padding-top:60px;
+    @media only screen and (max-width:768px){
+      font-size:20px;
+    }
+  }
+  p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 1.1px;
+    color:$white;
+    @media only screen and (max-width:768px){
+      font-size: 18px;
+    }
+  }
+}
+
+.section-heading{
+  text-align: center;
+  h2{
+    font-size:40px;
+    font-weight:500;
+    margin-bottom:15px;
+    color:$lightBlack-color;
+  }
+  p{
+    font-size:24px;
+    font-weight:300;
+    color:$lightBlack-color;
+    line-height: 27px;
+  }
+}
+
+/*** Payment Page***/ 
+
+.buynowBTn {
+  display: inline-block;
+}
+
+.payments-step {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.payments-step img {
+  border: $lightBlack-color solid 1px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/*** References Page***/ 
+.reference-block {
+  margin-bottom: 30px;
+  min-height: 180px;
+}
+
+.reference-block .card-header {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  background-color: $lightBlue-color;
+}
+
+.reference-block .card-body p {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+.reference-block .card-body strong {
+  color: $lightBlack-color;
+}
+
+.reference-block .card-body p a {
+  color: $lightBlue-color;
+}
+
+.reference-block .card-body p a:hover {
+  color: $lightBlack-color;
+}
+
+
+/**** Section Padding ***/
+
+.sec-padding {
+  padding: 90px 0px;
+}
+
+/**** Main Heading ***/
+
+.sec-padding {
+  padding: 90px 0px;
+}
+
+.main-title{
+  color: $lightBlack-color;
+  padding-bottom: 30px;
+  h1{
+    font-size:36px;
+    font-weight:500;
+    line-height: 44px;
+  }
+  p{
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+  }
+}
+.wantToDiscuss {
+  padding:30px 0px;
+  @media only screen and (max-width: 568px){
+    padding:10px 0px!important;
+  }
+  h2 {
+    font-weight: 600;
+    line-height: 20px;
+  }
+  p {
+    font-size: 22px;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+} 
+
+.content{
+
+  h2{
+      color:$lightBlue-color;
+      padding: 10px 0px 10px 0px;
+      margin: 0px;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  ul{
+      margin: 0px;
+      padding: 10px 0px 10px 0px;
+      list-style: none;
+      li{
+          position: relative;
+          padding-left: 28px;
+          line-height: 25px;
+          padding-bottom: 15px;
+          font-size: 14px;
+          color:$lightBlack-color;
+          font-size:17px;
+          &:before {
+              position: absolute;
+              top: 6px;
+              left: 0;
+              content: "\f054";
+              color: #5188c7;
+              font: 18px/1 FontAwesome;
+          }
+          p {
+              padding:0px;
+              margin:0px;
+              font-weight:300;
+              strong{
+                  font-weight:500;
+              }
+          }
+      }
+  }
+}
+
+/*** footer ***/
+.portfolioFooterBG {
+  background-size:cover;
+  background: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  background-size: cover;
+}
+
+.footerBGHeight {
+  height: 45%;
+  @media only screen and (max-width: 568px){
+    height:60%;
+  }
+}
+
+.footer-overlay {
+  width: 100%;
+  height: 100%;
+  background: #000000c7;
+  top: 0;
+  left: 0;
+  h2 {
+    font-size: 48px;
+    font-weight: 500;
+  }
+  span {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 50px;
+    cursor: pointer;
+    i {
+      border-radius: 100%;
+      border: $white solid 2px;
+      color: $white;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 40px;
+      font-weight: 300;
+      &:hover{
+        background: $lightBlue-color;
+      }
+    }
+  }
+}
+
+.bgTop{
+  position: absolute;
+  top:0;
+  width:100%;
+}
+
+#topcontrol{
+  i{
+    background: #000;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 30px;
+    border-radius:4px;
+  }
+}

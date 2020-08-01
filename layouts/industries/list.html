@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ partial "breadcrumbs.html" . }}
+<div class="content industriesWrap pt-5 pb-5">
+    <div class="container">
+        <div class="main-title">
+            <p class="text-center"> Industries Served so far </p>
+        </div>  
+        <div class="row">
+            {{ range (where .Data.Pages "Type" "industries") }}
+            <div class="col-sm-6">
+                <div class="industry-item"><img class="img-center w-100" src="{{ .Params.banner | relURL }}">
+                    <div class="industry-title"> <span> Industry </span>
+                        <h4> {{ .Params.subTitle }} </h4>
+                    </div><a class="popup-link" href="{{ .Permalink  }}">Read More</a>
+                    <h2> {{ .Params.subTitle }} </h2>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ range .Site.Data.footer.industries }}  
+<section class="bg-dark portfolioFooterBG footerBGHeight w-100 home"  style="background-image: url('{{ .image | relURL }}');">
+    <div class="footer-overlay d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h2 class="text-white text-center"> {{ .title }} </h2>
+            <a href="{{ .link | relURL}} "> <span class="text-center arrowicon"> <i class="fa fa-angle-down"></i> </span> </a>
+        </div>
+    </div> 
+</section>
+{{ end }}
+
+{{ end }}

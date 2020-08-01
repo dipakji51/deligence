@@ -1,0 +1,49 @@
+item:
+  - weight: 1
+    name: "Digital Ocean"
+    image: "img/clients/1.jpg"
+    country: "USA"
+    alternative: "Our clientele"
+
+  - weight: 2
+    name: "Factile"
+    image: "img/clients/2.png"
+    country: "USA"
+    alternative: "Our clientele"
+
+  - weight: 3
+    name: "Ariane"
+    image: "img/clients/3.png"
+    country: "France"
+    alternative: "Our clientele"
+
+  - weight: 4
+    name: "QuickPay"
+    image: "img/clients/4.png"
+    country: "Denmark"
+    alternative: "Our clientele"
+
+  - weight: 5
+    name: "Affle"
+    image: "img/clients/6.png"
+    country: "India"
+    alternative: "Our clientele"
+
+  - weight: 6
+    name: "Delhi University"
+    image: "img/clients/5.png"
+    country: "India"
+    alternative: "Our clientele"
+
+  - weight: 7
+    name: "Envent"
+    image: "img/clients/7.png"
+    country: "Australia"
+    alternative: "Our clientele"
+
+  - weight: 8
+    name: "Dr. Bertagnoli"
+    image: "img/clients/8.png"
+    country: "Germany"
+    alternative: "Our clientele"
+

@@ -1,0 +1,277 @@
+{{ define "main" }}
+
+{{ partial "breadcrumbs.html" . }}
+
+{{ range .Site.Data.career.whychooseus }}   
+<section class="career-whyChooseUs pt-5 pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 d-flex align-content-center flex-wrap">
+        <h1>{{ .title }}</h1>
+        <h3>{{ .subtitle }}</h3>
+        <p style="font-weight:300;">{{ .text }}</p>
+        <h3>{{ .subtitle2 }}</h3>
+        <p style="font-weight:300;">{{ .text2 }}</p>
+        <p style="font-weight:300;">{{ .text3 }}</p>
+        <p style="font-weight:300;">{{ .text4 }}</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="{{ .image }}" alt="{{.alternative }}" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+</section> 
+{{ end }}
+{{ range .Site.Data.career.dtPoints }}   
+<section class="career-whyDT pt-5 pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="{{ .image }}" alt="{{.alternative }}" class="img-fluid" />
+      </div>
+      <div class="col-sm-6 d-flex align-items-center">
+        <div class="whyDTText">
+          <h2>{{ .title }}</h2>
+          {{ range .points }}
+            {{ .item }}
+          {{ end }}
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ range .Site.Data.career.doingatDT }}  
+<section class="doingAtDT">
+  <div class="container-fluid m-0 p-0">
+    <div class="row m-0 p-0">
+      <div class="col-sm-9 m-0 p-0">
+        <div class="doingDTText">
+          <div class="whiteSmallTextArea">
+            <h2>A place to Grow Together</h2>
+            <ul>
+              {{ range .list}}
+                <li> {{ .item }} </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 m-0 p-0">
+        <img src="{{ .image }}" alt="{{.alternative }}" class="w-100 pb-3 pt-3" />
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<section class="careerRatingSection pt-5 pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        {{ range .Site.Data.career.rating }}  
+        <div class="careerRatingWhiteBox">
+          <h3>{{ .title }}</h3>
+          <ul class="ratingList">
+            {{ range .list}}
+            <li class="{{ .active }}">
+              <div class="row p-0 m-0">
+                <div class="col-sm-6 p-0 m-0 d-flex align-items-center"><label>{{ .name }}</label></div>
+                <div class="col-sm-6 p-0 m-0 d-flex align-items-center justify-content-end">
+                  <div class="rating">
+                    {{ range .starrate}}
+                      <i class="{{ .star}}"></i>
+                    {{ end}}
+                  </div>
+                  <div class="ratingPoint"> {{4.8}} </div>
+                </div>
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      </div>
+      <div class="col-sm-7">
+        <div class="careerRatingWhiteBox h-100">
+          {{ range .Site.Data.career.teamView }}  
+          
+          <h3>{{ .title }}</h3>
+          <div id="teamMemberViews" class="carousel slide position-relative h-100" data-ride="carousel">
+            <div class="carousel-inner">
+              {{ range .carousel}}
+
+              <div class="carousel-item {{ .active }}">
+                <div class="reviewer">
+                  <h4> {{ .heading }} </h4>
+                  <span> {{ .subtitle }} </span>
+                  <p> {{ .reviewerline }} </p>
+                  <span> {{ .protitle }} </span>
+                  <p> {{ .proline }} </p>
+                  <span> {{ .constitle }} </span>
+                  <p> {{ .consline }} </p>
+                  <span> {{ .advicetitle }} </span>
+                  <p> {{ .adviceline }} </p>
+                </div>
+              </div>     
+              {{ end }}
+            </div>
+            <ol class="carousel-indicators d-flex align-items-center">
+              <li data-target="#teamMemberViews" data-slide-to="0" class="active"></li>
+              <li data-target="#teamMemberViews" data-slide-to="1"></li>
+              <li data-target="#teamMemberViews" data-slide-to="2"></li>
+            </ol>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    <div class="circleratingBG careerRatingWhiteBox mt-5">
+      <div class="row">
+        {{ range .Site.Data.career.recommendFriend }}  
+        {{ range .list }}
+          <div class="col-sm-4">
+            <div class="circleWrap">
+              <h4 class="text-center"> {{ .name }} </h4>
+              <div class="progress-circle cir-blue">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value"> {{ .percentage }}</div>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="interviewProcess">
+  <div class="container-fluid m-0 p-0">
+    {{ range .Site.Data.career.interviewProcess }}  
+    <div class="row m-0 p-0">
+      <div class="col-sm-2 m-0 p-0"></div>
+      <div class="col-sm-6 m-0 p-0">
+        <div class="interviewSteps">
+          <h2>{{ .title }}</h2>
+          <p>{{ .subtitle }}</p>
+          <ul>
+            {{ range .item}}
+              <li>
+                <div class="process-inner d-flex flex-wrap align-items-center">
+                  <span class="steps1-num" data-bg-color="#ff7810">{{ .number }}</span>
+                  <div class="d-flex flex-wrap align-items-center mt-1">
+                    <h4> {{ .name }} </h4>
+                    <p> {{ .text }}</p>
+                  </div>
+                </div>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4 m-0 p-0">
+        <img src="{{ .image }}" alt="{{.alternative }}" class="w-100" />
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+<section class="whoCanApply sec-padding">
+  <div class="container">
+    <div class="row">
+      {{ range .Site.Data.career.whoCanApply }} 
+      <div class="col-sm-8">
+        <div class="whoCanApplyText">
+          <h2 class="text-white"> {{ .title}} </h2>
+          <ul>
+            {{ range .list }}
+              <li> {{ .text }} </li>
+            {{ end }}  
+          </ul>
+          <h3 class="text-white"> {{ .subtitle}} </h3>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="cureentOpening pt-5 pb-5">
+  <div class="container">
+    {{ range .Site.Data.cureentOpening.jobs }} 
+      <div class="main-title pb-3">
+        <h2 class="text-center"> {{ .title }} </h2>
+      </div>
+      <div class="howtoApply">
+        {{ range .list }}
+          <div class="job-list">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="job-info">
+                  <h3>{{ .title}}</h3>
+                  <span><strong>POSITION :</strong> {{ .position }} </span>
+                  <span><strong>EXPERIENCE :</strong> {{ .experience }}</span>
+                </div>
+              </div>
+              <div class="col-sm-6 d-flex align-items-center"> 
+                <div class="job-des">
+                  {{ range .jobdes}}
+                    <p>{{ .name }}</p>
+                  {{ end }}
+                </div>
+              </div>
+              <div class="col-sm-2 d-flex align-items-center"> 
+                <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="btn btn-theme apply-btn">{{ .btntext }}</a>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+      <div class="text-center">
+          <p class="sendresumeText">If you have some different skills - send your resume to <a href="mailto:hr@deligence.com"> hr@deligence.com </a>. We'll contact you when we'll have an appropriate role available for you.</p>
+      </div>
+    {{ end }}
+  </div>
+</section>
+
+<div class="wantToDiscuss light-blue-bg pl-5 pr-5">
+  {{ with .Site.Data.wantToDiscuss }}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2 class="text-white"> {{ .title}} </h2>
+        <p class="text-white"> {{ .smallText }} <span class="yellow-text"> {{ .boldText }}</span> </p>
+      </div>
+      <div class="col-sm-6 d-flex align-items-center justify-content-end">
+        {{ with .appointmentButton }}
+        <a href="{{ .link | relURL }}" target="_blank" class="theme-btn yellow-btn pl-5 pr-5 pt-3 pb-3 light-black-text">
+          {{ .btnText }}
+        </a>
+        {{ end }}
+        <span class="pl-4 pr-4 text-white"> or </span>
+        {{ with .requestButton }}
+        <a href="{{ .link | relURL }}" class="theme-btn black-btn pl-5 pr-5 pt-3 pb-3"> {{ .btnText }} </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ range .Site.Data.footer.career }}  
+  <section class="bg-dark portfolioFooterBG footerBGHeight w-100" style="background-image: url('{{ .image | relURL }}');">
+      <div class="footer-overlay d-flex align-items-center justify-content-center">
+          <div class="container">
+              <h2 class="text-white text-center"> {{ .title }} </h2>
+              <a href="{{ .link | relURL }} "> <span class="text-center arrowicon"> <i class="fa fa-angle-down"></i> </span> </a>
+          </div>
+      </div> 
+  </section>
+{{ end }}
+{{ end }}

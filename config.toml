@@ -1,0 +1,176 @@
+baseurl = "https://www.deligence.com/"
+title = "Deligence Technologies: Web and Mobile App Development Company"
+languageCode = "en-us"
+# Site language. Available translations in the theme's `/i18n` directory.
+defaultContentLanguage = "en"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+# Enable comments by entering your Disqus shortname
+disqusShortname = "devcows"
+
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = "UA-54228485-1"
+
+summaryLength = 25
+# Define the number of posts per page
+paginate = 6
+
+[outputs]
+  page = ["HTML"]
+
+[Permalinks]
+    blog = "/blog/:filename/"
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/animate/animate.css"
+  [[params.plugins.css]]
+  URL = "plugins/custom/custom.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/modernizer/modernizr.min.js"
+
+[params]
+
+# logo image
+  logo = "img/logo.png"
+  logoAlt = "img/logo-alt.png"
+  #home = "Home"
+
+# blog data
+  date_format = "January 2, 2006"
+  blog_date = "02"
+  blog_month = "Jan"
+
+# meta Description
+  defaultDescription = "Deligence Technologies is a Leading web & mobile app development company based in India, offers innovative solutions for Android, iOS and Web App development."
+  
+# meta keywords
+  defaultKeywords = "Mobile Application Development Company, Best mobile app developers, hire app developers, web app development, mobile app development company in India"
+
+
+[menu]
+  # Shown in the side menu.
+
+  [[menu.main]]
+    Name = "About Us"
+    identifier = "about"
+    URL = "/about-us"
+    Weight = 1 
+
+      [[menu.main]]
+        name = "Career"
+        parent = "about"
+        url = "/career"
+        weight = 1
+
+      [[menu.main]]
+        name = "Partnership"
+        parent = "about"
+        url = "/partnerships"
+        weight = 2
+
+    [[menu.main]]
+      name = "Industries"
+      weight = 4
+      url = "/industries/"
+
+    [[menu.main]]
+    name = "Portfolio"
+    weight = 5
+    url = "/portfolio/"
+
+    [[menu.main]]
+    name = "Technologies"
+    weight = 6
+    url = "/technologies"
+
+    [[menu.main]]
+    name = "Blog"
+    weight = 7
+    url = "/blog"
+
+    [[menu.main]]
+    name = "Contact Us"
+    weight = 8
+    url = "/contact-us"
+
+[[menu.main]]
+    Name = "Services"
+    identifier = "services"
+    URL = "/services"
+    Weight = 3.0  
+    title = "Our Services"
+  
+    [[menu.main]]
+    name = "Mobile App Development"
+    parent = "services"
+    url = "/services/mobile-apps-development"
+    weight = 1
+    title = "Our Services"
+
+    [[menu.main]]
+    name = "Web App Development"
+    parent = "services"
+     url = "/services/web-development"
+    weight = 2
+
+    [[menu.main]]
+    name = "Flutter Mobile App Development"
+    parent = "services"
+     url = "/services/flutter-mobile-app-development"
+    weight = 3
+
+    [[menu.main]]
+    name = "Alexa skill Development"
+    parent = "services"
+     url = "/services/alexa-skill-development"
+    weight = 4
+
+    [[menu.main]]
+    name = "UI/UX Development"
+    parent = "services"
+     url = "/services/ui-ux-development"
+    weight = 5
+
+    [[menu.main]]
+    name = "Digital Media Marketing "
+    parent = "services"
+     url = "/services/digital-media-marketing"
+    weight = 6
+
+    [[menu.main]]
+    name = "Chatbot App Development"
+    parent = "services"
+     url = "/services/chatbot-app-development"
+    weight = 7
+
+[params.widgets]
+    search = true
+    
+[taxonomies]
+  menuTitle = "menuTitle"
+
+
+# 404 error customization
+[params.error404]
+  heading = "Oops!"
+  text = "We can't seem to find the page you're looking for."
+  button = "[Go back home](/)"
+  img = "error.png"
+
+
+[params.appointment]
+  name = "Book an Appointment"
+  weight = 1
+  link = "https://calendly.com/deligence/30min/"

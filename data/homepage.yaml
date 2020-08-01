@@ -1,0 +1,52 @@
+# Video Text
+video:
+  enable : true
+  title : "Get your Web & Mobile Apps"
+  smallText : "Designed, Developed, Enhanced, and Promoted and"
+  yellowText : "triple your monthly revenue"
+  videoLink : "img/mainvideo-light.mp4"
+  button:
+    btnText : "How we Triple your Monthly Revenue"
+    URL : "how-we-triple-your-monthly-revenue/"
+    
+# Cookie alert
+Cookie:
+  enable : true
+
+# Client says section
+clientSays:
+  enable : true
+  title : "What Our Clients Say"
+
+#Services section
+services:
+  enable : true
+  title : "Services"
+  smallText: "What we can do for you?"
+
+#Counts section
+counts:
+  enable : true
+  title : "Fascinating Facts"
+
+#Awards section
+awards:
+  enable : true
+  title : "Awards & Recognition"
+  smallText: Deligence Technologies is recognised among the Top Mobile App Development Companies in India by research agencies for its robust app solutions.
+
+#our clients section
+ourclients:
+  enable : true
+  title : "Our Clients"
+
+#Golden words section
+goldenWords:
+  enable : true
+  boldText : "Golden"
+  lightText: "Words"
+
+#Latest News section
+latestNews:
+  enable : true
+  title : "Latest News"

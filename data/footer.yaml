@@ -1,0 +1,51 @@
+home:
+  - name: "home"
+    image: "/img/banner/portfolio.jpg"
+    title: "Portfolio"
+    link: "/portfolio/"
+about:
+  - name: "about"
+    image: "/img/banner/career.jpg"
+    title: "Career"
+    link: "/career"
+career:
+  - name: "career"
+    image: "/img/banner/about-us.jpg"
+    title: "Partnerships"
+    link: "/partnerships"
+partnership:
+  - name: "partnership"
+    image: "/img/banner/services.jpg"
+    title: "services"
+    link: "/services"
+service:
+  - name: "Services"
+    image: "/img/banner/industries.jpg"
+    title: "Industries"
+    link: "/industries"
+industries:
+  - name: "industries"
+    image: "/img/banner/technology.jpg"
+    title: "Technologies"
+    link: "/technologies"
+technologies:
+  - name: "technologies"
+    image: "/img/banner/blog.png"
+    title: "Blog"
+    link: "/blog"
+blog:
+  - name: "Blog"
+    image: "/img/banner/contact.jpg"
+    title: "Contact"
+    link: "/contact-us"
+contact:
+  - name: "contact"
+    image: "/img/banner/home.jpg"
+    title: "Home"
+    link: "/"
+portfolio:
+  - name: "portfolio"
+    image: "/img/banner/services.jpg"
+    title: "Services"
+    link: "/services"
+

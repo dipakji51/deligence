@@ -1,0 +1,34 @@
+<header id="header">
+  <div class="container-fluid main-menu">
+    <div class="align-items-center justify-content-between d-flex">
+      <div id="logo">
+          <a href="{{ .Site.BaseURL }}" title="Home">
+              <img src="{{ .Site.BaseURL}}img/deligenceLogoWhite.png" alt="{{ .Title }} logo" class="logo-white">
+              <img src="{{ .Site.BaseURL}}img/deligenceLogoBlue.png" alt="{{ .Title }} logo" class="logo-blue">
+              <!-- <img src="{{ .Site.BaseURL }}{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="visible-xs visible-sm"> -->
+            </a> 
+      </div>
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+              <li class="menu-has-children"><a href="{{ .URL }}">{{ .Name }} </a>
+                <ul class="subnav">
+                    {{ range .Children }}
+                  <li><a href="{{ .URL }} ">{{ .Name }}</a></li>	 
+                  {{ end }}               		
+                </ul>
+              </li>	
+            {{ else }}
+              <li><a href="{{ .URL }}" >{{ .Name }}</a></li>
+            {{ end }}			          					          		          
+          {{ end }}
+          {{ with .Site.Params.appointment}}
+          <li> <a href="{{ .link | relURL }}" target="_blank">{{ .name }}</a> </li>
+            {{ end }}
+        </ul> 
+      </nav><!-- #nav-menu-container -->		    		
+    </div>
+  </div>
+</header><!-- #header -->
+<!-- Navigation -->

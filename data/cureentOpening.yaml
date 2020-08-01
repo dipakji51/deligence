@@ -1,0 +1,46 @@
+jobs :
+  - title : Current Openings
+    list :
+      - weight : 1
+        title :  Mobile App Developers/Flutter Developers 
+        position : 3
+        experience : 0 to 4 years (Freshers can also apply)
+        jobdes :
+          - name : Excellent Command on MVC/OOPs
+          - name : Willing to learn new technologies
+          - name : Excellent Communication Skills
+        btntext : Apply Now
+        link : "https://goo.gl/forms/gXanOOXJl0weAE3C3"
+      - weight : 2
+        title : Python/Django Developers 
+        position : 2
+        experience : 6 Months - 4 Years
+        jobdes :
+          - name : Excellent Command on Python/Django
+          - name : Willing to learn new technologies
+          - name : Excellent Communication Skills
+        btntext : Apply Now
+        link : "https://forms.gle/jq73RmE9SdR79GaHA"
+      - weight : 3
+        title : PHP Developers/Joomla Developers 
+        position : 2
+        experience : 1 Year - 6 Years
+        jobdes :
+          - name : Excellent Command on MVC/OOPs
+          - name : Has experience to work independently as well as in team
+          - name : Willing to learn new technologies
+          - name : Excellent Communication Skills
+        btntext : Apply Now
+        link : "https://goo.gl/forms/Ahtg0UCKTAbD0twu2"
+      - weight : 4
+        title : Software Engineer Trainee/Fresher's
+        position : 6
+        experience : 
+        jobdes :
+          - name : Interest in Programming
+          - name : Good Command on the Languages learned in College 
+          - name : Good Command on Database Management, SQL Queries, and OOPs concepts
+          - name : Willing to learn new technologies 
+          - name : Good Communication Skills
+        btntext : Apply Now
+        link : "https://goo.gl/forms/VntPPWPyFuQgywm93"

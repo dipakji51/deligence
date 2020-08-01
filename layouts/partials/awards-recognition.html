@@ -1,0 +1,21 @@
+<section class="sec-padding light-blue-bg">
+    <div class="container">
+    <div class="main-title">
+        {{ with .Site.Data.homepage.awards }}
+          <h1 class="text-center text-white">{{.title }}</h1>
+          <h5 class="text-center text-white pt-3 pb-3">{{.smallText }}</h5>
+        {{ end }}
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            {{ range first 4 .Site.Data.awards.list.item }}
+                <div class="col-sm-3">
+                    <a href="{{ .url | relURL }}" target="_blank">
+                        <div class="awardsImg text-center"><img src="{{ .image | relURL }}" alt="{{.alternative }}" class="img-fluid" /></div>
+                    </a>
+                </div>
+            {{ end }}
+        </div>
+    </div>   
+</section>

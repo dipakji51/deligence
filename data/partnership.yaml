@@ -1,0 +1,34 @@
+title: "We have Partnered With Cutting Edge & Latest Technologies To Provide You World-Class Web & Mobile Apps. "
+
+fullwidthList:
+   - name : " Meteor Prime Partner Since May 2017"
+     image: "/img/partnership/meteor.png"
+     description: "We became Meteor Official Partner in Nov 2015. We completed 15 Meteor Apps, made Open Source Contribution in Meteor, 
+     and in May 2017 - we were recognized as Meteor Prime Partner. We are the first
+     and only one from India and one of the six worldwide."
+     alternative: "Meteor Prime Partner"
+
+smallList :
+  - name : "MongoDB Partner Since Dec 2015"
+    image: "/img/partnership/mongo-DB.png"
+    alternative: "Mongo DB partner for App development"
+
+  - name : "Reaction Commerce Partner"
+    image: "/img/partnership/reaction-commerce.png"
+    alternative: "Reaction commerce app development"
+
+  - name : "ZoomCharts Partner"
+    image: "/img/partnership/zoomcharts.png"
+    alternative: "Zoomchart Partner - App Development"
+
+  - name : "HikaShop - ECommerce Partner"
+    image: "/img/partnership/hikaShop.png"
+    alternative: "Hikashop - eCommerce development partner"
+
+  - name : "Docker Partner"
+    image: "/img/partnership/docker.png"
+    alternative: "Docker Partner"
+
+  - name : "Jomres Partner"
+    image: "/img/partnership/jomres.png"
+    alternative: "Jomres Partner"

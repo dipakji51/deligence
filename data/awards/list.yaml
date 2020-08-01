@@ -1,0 +1,20 @@
+item:
+  - weight: 1
+    image: "/img/awards/img-1.jpg"
+    url: "https://www.goodfirms.co/company/deligence-technologies-pvt-ltd"
+    alternative: "Awards & Recognition"   
+
+  - weight: 2
+    image: "/img/awards/img-2.jpg"
+    url: "https://clutch.co/profile/deligence-technologies?utm_source=widget&utm_medium=widget_2&utm_campaign=widget&utm_content=logo"
+    alternative: "Awards & Recognition"
+
+  - weight: 3
+    image: "/img/awards/img-3.jpg"
+    url: "https://www.upwork.com/o/companies/~01295f06b4bb1f72ca"
+    alternative: "Awards & Recognition"
+
+  - weight: 4
+    image: "/img/awards/img-4.jpg"
+    url: "https://develop4u.co/company/deligence-technologies-pvt-ltd"
+    alternative: "Awards & Recognition"

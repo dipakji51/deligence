@@ -1,0 +1,13 @@
+{{ "<!-- page title -->" | safeHTML }}
+<!-- Inner Header -->
+<div class="inner-header h-50 light-black-bg d-flex align-items-center justify-content-center" style="background-image: url('{{ .Params.bgImage | relURL }}'),url('{{ .Params.bgImageAlt | relURL }}');">
+  <div class="container">
+    <h1 class="text-center text-white">{{ .Params.subTitle}}</h1>
+    <p class="text-center text-white">  {{ .Params.smallTextWhite }} <br/> 
+      <span class="yellow-text"> {{ .Params.smallTextYellow}} </span>      
+    </p>
+  </div>
+</div>
+<!--\\ Inner Header --> 
+
+{{ "<!-- /page title -->" | safeHTML }}

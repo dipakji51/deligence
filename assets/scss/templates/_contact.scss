@@ -1,0 +1,62 @@
+.contactDetailBox{
+    box-shadow: 0 15px 39px 0 rgba(8,18,109,.1);
+    padding:40px 3rem!important;
+    background: $white;
+    text-align: center;
+    min-height:300px;
+    .icon-lg {
+        font-size: 56px;
+        color:$lightBlue-color;
+    }
+}
+.map{
+    border:#c7c7c7 solid 1px;
+}
+.contactForm{
+    background: $lightBlue-color;
+    padding: 10px 30px;  
+    form{
+        color: $white;
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $white;
+            opacity: 1; /* Firefox */
+          }
+          
+          :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: $white;
+          }
+          
+          ::-ms-input-placeholder { /* Microsoft Edge */
+            color: $white;
+          }
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: 15px 0px;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #fff;
+            background-color: transparent;
+            background-clip: padding-box;
+            border: none;
+            border-bottom: #fff solid 1px;
+            border-radius: 0;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            outline:none;
+        }
+        button{
+            background: $lightBlack-color;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            font-weight: 300;
+            padding: 10px 20px;
+            letter-spacing: 0.9px;
+            text-transform: uppercase;
+            &:hover{
+                background: $lightBlack-hover-color;
+            }
+        }
+    }
+}
+

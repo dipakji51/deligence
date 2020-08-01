@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+{{ partial "breadcrumbs.html" . }}
+
+<section class="whoWeAre pt-5 pb-5">
+  <div class="container">
+    {{ with .Site.Data }}
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 style="text-align:center;">Thank you for contacting us.</h1>
+         <p  style="text-align:center;"> You are very important to us, all information received will always remain confidential.</br> We will contact you as soon as we review your message.</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+<div class="wantToDiscuss yellow-bg pl-5 pr-5">
+  {{ with .Site.Data.wantToDiscuss }}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2 class="light-black-text"> {{ .title}} </h2>
+        <p class="light-black-text"> {{ .smallText }} <span class="blue-text"> {{ .boldText }} </span>
+        </p>
+      </div>
+      <div class="col-sm-6 d-flex align-items-center justify-content-end">
+        {{ with .appointmentButton }}
+        <a href="{{ .link | relURL  }}" target="_blank" class="theme-btn blue-btn pl-5 pr-5 pt-3 pb-3 text-white">
+          {{ .btnText }}
+        </a>
+        {{ end }}
+        <span class="pl-4 pr-4 light-black-text"> or </span>
+        {{ with .requestButton }}
+        <a href="{{ .link | relURL  }}" class="theme-btn black-btn text-white pl-5 pr-5 pt-3 pb-3"> {{ .btnText }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+  {{ range .Site.Data.footer.contact }}  
+    <section class="bg-dark portfolioFooterBG footerBGHeight w-100" style="background-image: url('{{ .image | relURL  }}');">
+        <div class="footer-overlay d-flex align-items-center justify-content-center">
+            <div class="container">
+                <h2 class="text-white text-center"> {{ .title }} </h2>
+                <a href="{{ .link | relURL }} "> <span class="text-center arrowicon"> <i class="fa fa-angle-down"></i> </span> </a>
+            </div>
+        </div> 
+    </section>
+  {{ end }}
+{{ end }}

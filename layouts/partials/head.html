@@ -1,0 +1,138 @@
+<head>
+
+  <meta name="google-site-verification" content="-quzyQXxpNQ_fKgJVfgjTcb6jfCfF9kCuaKsd_AoZdo" />
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon">
+
+  <title>{{ .Title }}</title>
+  
+  {{ if .Keywords }}
+  <meta name="keywords" content="{{ .Keywords }}">
+  {{ else if .Site.Params.DefaultKeywords }}
+  <meta name="keywords" content="{{ .Site.Params.DefaultKeywords }}">	
+  {{ end }}
+  
+  {{ if .Description }}
+  <meta name="description" content="{{ .Description }}">
+  {{ else if .Site.Params.DefaultDescription }}
+  <meta name="description" content="{{ .Site.Params.DefaultDescription }}">	
+  {{ end }}
+
+  {{ template "_internal/google_analytics.html" . }}
+
+  {{ hugo.Generator }}
+
+
+<script type="application/javascript">
+(function(h,o,t,j,a,r){
+ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+ h._hjSettings={hjid:1505758,hjsv:6};
+ a=o.getElementsByTagName('head')[0];
+ r=o.createElement('script');r.async=1;
+ r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+ a.appendChild(r);
+ })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800&display=swap" rel="stylesheet"/>
+  <!-- Bootstrap and Font Awesome css -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+
+
+  {{ "<!-- plugins -->" | safeHTML }}
+
+  {{ range .Site.Params.plugins.css }}
+    <link rel="stylesheet" href="{{ .URL | absURL }} ">
+  {{ end }}
+
+  {{ "<!-- Main Stylesheet -->" | safeHTML }}
+
+  <!-- Responsivity for older IE -->
+  {{ `
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  ` | safeHTML }}
+
+
+
+    
+   
+
+  <!-- Favicon and apple touch icons-->
+  <link rel="shortcut icon" href="{{ "img/favicon.ico" | absURL }}" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="{{ "img/apple-touch-icon.png" | absURL }}" />
+
+  <!-- Facebook OpenGraph tags -->
+  <!-- <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ .Description}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .URL }}" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image }}" />  -->
+   
+ 
+  
+  <!-- Twitter Card -->
+   <!--  <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ .Title }}" />
+    <meta name="twitter:description" content="{{ .Description }}" />
+    <meta name="twitter:url"  content="{{ .URL }}" />
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.twImage }}" />        
+    <meta name="twitter:site" content="{{ .Site.Params.deligence1 }}" />
+    <meta name="twitter:creator" content="{{ .Site.Params.deligence1 }}" />
+ -->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ if ne .URL "/" }}{{ .Title }} &middot; {{ end }}{{ .Site.Title }}"/>
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}"/>
+    <meta property="og:site_name" content="{{ .Site.Title }}"/>
+    <meta property="og:url" content="{{ .Permalink }}"/>
+    <meta property="og:locale" content="en">
+      {{ if .Params.image }}
+    <meta property="og:image" content="https://www.deligence.com{{ .Params.image | relURL }}"/>
+    <meta property="og:image:secure_url" content="{{ .Params.image | absURL }}"/>
+    {{ else }}
+    <meta property="og:image" content="https://www.deligence.com{{ .Site.Params.image | relURL }}"/>
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:image:secure_url" content="{{ .Site.Params.image | absURL }}"/>
+    {{ end }}
+    <meta property="og:type" content="website"/>
+
+
+    {{ if .Site.Params.twitter_card_whitelisted }}
+        {{ if .Params.twitter_summary }}
+    <meta property="twitter:card" content="{{ .Params.twitter_summary }}">
+        {{ else if .Description }}
+    <meta property="twitter:card" content="{{ .Description }}">
+        {{ else }}
+    <meta property="twitter:card" content="{{ .Title }}">
+        {{ end }}
+    {{ end }}
+    <meta property="twitter:description" content="{{ .Description }}">
+    <meta property="twitter:title" content="{{ .Title }}">
+    {{ if .Params.image }}
+    <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.image }}">
+    {{ end }}
+    <!-- End of Twitter -->
+
+
+ 
+  <!-- Custom stylesheet - for your changes -->
+   <!-- <link href="{{ "scss/custom.css" | absURL}}" rel="stylesheet"> -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"> -->
+
+  {{ "<!-- Main Stylesheet -->" | safeHTML }}
+  {{ $styles := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+
+</head>

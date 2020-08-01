@@ -1,0 +1,53 @@
+enable  : true
+flutterApp:
+  - name : "Meditation App"
+    imgorder : "order-2"
+    textorder : "order-1"
+    bgImage : "/img/portfolio/medimate-bg.png"
+    colorCode : "#6c3f1f"
+    sideImage : "img/portfolio/medimate-img.png"
+    logo : "img/portfolio/medimate.png"
+    topLine : "Meditation App"
+    description : "An application that helps in meditation. Users can choose sessions they want to start with, e.g. Basics, Intermediate etc."
+    btnText : "View Details"
+    link : "medimate"
+
+  - name : "Car Auction App"
+    imgorder : "order-1"
+    textorder : "order-2"
+    bgImage : "/img/portfolio/ca-network-bg.png"
+    colorCode : "#a62925"
+    sideImage : "img/portfolio/ca-network-img.png"
+    logo : "img/portfolio/ca-network.png"
+    topLine : "Car Auction App"
+    description : "Find cheap used cars for sale from bank repos, title pawn repos, police auctions, used car dealer trades, and also private seller vehicles."
+    btnText : "View Details"
+    link : "public-auto-auctions"
+
+  - name : "Restaurant App"
+    imgorder : "order-2"
+    textorder : "order-1"
+    bgImage : "img/portfolio/best-indian-restaurants-bg.png"
+    colorCode : "#ec6337"
+    sideImage : "img/portfolio/best-indian-restaurants-img.png"
+    logo : "img/portfolio/bir.png"
+    topLine : "Restaurant App"
+    description : "This is a Business Directory App for Android and iOS where you can find Best Indian Restaurants across the world."
+    btnText : "View Details"
+    link : "best-indian-restaurants"
+
+
+  - name : "Find Your Partner App"
+    imgorder : "order-1"
+    textorder : "order-2"
+    bgImage : "img/portfolio/find-your-partner-bg.png"
+    colorCode : "#d9544f"
+    sideImage : "img/portfolio/find-your-partner-img.png"
+    logo : "img/portfolio/find-your-partner.png"
+    topLine : "Find Your Partner App"
+    description : "Find Your Partner is easy and fun app. Use the Swipe Right feature to like someone and use the Swipe Left feature to pass someone"
+    btnText : "View Details"
+    link : "find-your-partner"
+
+    
+

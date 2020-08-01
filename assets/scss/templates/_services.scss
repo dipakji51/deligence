@@ -1,0 +1,399 @@
+.servicesList{
+    .service-thumb{
+        border: $lightBlue-color solid 10px;
+    }
+}
+.service-thumb{
+    border: $lightBlue-color solid 10px;
+    display: block;
+    text-align: center;
+    padding: 10px 30px;
+    min-height: 350px;
+    max-height: 350px;
+    margin: 10px 10px;
+    img{
+        max-width: 25%;
+        margin: 0 auto;
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h2{
+        color:$lightBlack-color;
+        padding:20px 0px;
+    }
+    p{
+        color:$lightBlack-color;
+    }
+    &:hover{
+        h2{
+            color:$lightBlue-color;
+        }
+        p{
+            color:$lightBlue-color;
+        }
+    }
+}
+
+
+.serviceIntroText{
+    text-align: center;
+    h3{
+      font-size:30px;
+      color:$lightBlack-color;
+      font-weight:500;
+      margin-bottom:15px;
+    }
+    p{
+       font-weight:300;
+       font-size:20px;
+       line-height: 30px;
+    }
+}
+
+.whyWeBest{
+    background: #233e55 url(../img/services/whyWeAreBG.jpg);
+    background-size: cover;
+    width:100%;
+    h2{
+        font-size:25px;
+        font-weight:500;
+        color:$lightBlack-color;
+        margin-bottom: 15px;
+    }
+    p{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+    ul.progressBar{
+        margin:0px;
+        padding: 0px;
+        li{
+            list-style: none;
+            .progress-title{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px;
+                font-size:16px;
+                font-weight:500;
+            }
+            .progress{
+                height: 7px;
+                background: #a9a8a7;
+                border-radius: 0px;
+                box-shadow: none;
+                margin-bottom: 20px;
+                overflow: visible;
+                display: flex;
+                .progress-bar{
+                    background: $lightBlue-color;
+                }
+            }
+        }
+    }
+    .funfacts{
+        text-align: center;
+        padding: 40px 10px 0px 10px;
+        img{
+            display: inline-block;
+            text-align: center;
+        }
+        p{
+            font-size:16px;
+            font-weight:600;
+            color:$lightBlue-color;
+            text-align: unset;
+            text-transform: uppercase;
+            line-height: 23px;
+            margin-top: 20px;
+            margin-bottom: 0px;;
+        }
+    }
+}
+
+.servicePorjects{
+    .findOutMore{
+        a{
+            background: $lightBlack-color;
+            padding: 10px 0px;
+            text-align: center;
+            color: $white;
+            font-weight:400;
+            font-size:29px;
+            width: 100%;
+            display: block;
+        }      
+    }
+}
+
+.serviceTestimonial{
+    width:100%;
+    background:$lightBlue-color;
+    position: relative;
+    .serviceTestimonialImg{
+        img{
+            display: block;
+            height: 100%;
+        }
+    }
+    .reviewDate{
+        text-align: center;
+        p{
+            font-size: 50px;
+            color: #fff;
+            font-weight: 500;
+            line-height: 0;
+            letter-spacing: 4.4px;   
+        }
+        span{
+            font-size:30px;
+            color:$white;
+            font-weight:500;
+            margin-top:3px;
+        }
+    }
+    .reviewContent{
+        .reviewRating{
+            padding: 0px 0px 10px 0px;
+            span{
+                color:$lightBlack-color;
+                &.checked{
+                    color:$white;
+                }
+            }
+        }
+        h3{
+            font-size: 24px;
+            font-weight: 500;
+            color:$white;
+            margin-bottom: 10px;
+            letter-spacing: 0.4px;
+        }
+        p{
+            font-weight: 300;
+            font-size: 18px;
+            color:$white;
+            line-height: 30px;
+        }
+        .reviewName{
+            font-size: 24px;
+            font-weight: 500;
+            color:$white;
+            margin: 0px;
+        }
+        .reviewCompany{
+            font-size: 24px;
+            font-weight: 400;
+            color: $yellow-color;
+            padding: 5px 0px;
+            margin: 0px;
+        }
+        .reviewCountry{
+            font-size: 21px;
+            font-weight: 300;
+            color:$white;
+            margin: 0px;
+        }
+    }
+}
+
+.serviceExpertise{
+    background: #000 url(../img/services/expertiseBG.jpg);
+    background-size: cover;
+    .serviceExpertiseContent{
+        background: $white;
+        padding:60px 30px;
+        h3{
+          color:$lightBlack-color;
+          font-size:30px;
+          font-weight:500;
+          line-height: 38px;
+        }
+        p{
+          color:$lightBlack-color;
+          font-size:20px;
+          font-weight:300;
+          margin: 0px;
+        }
+    }
+    .serviceExpertiseIcon{
+        border:#8fb7e5 solid 1px;
+        h3{
+            font-weight: 300;
+            font-size:20px;
+            padding-top:20px;
+            color:$white;
+        }
+    }
+}
+
+.industryCoverage{
+    .industryItem{
+        background:$lightBlue-color;
+        text-align: center;
+        max-width:15%;
+        min-width:15%;
+        margin: 10px 20px;
+        padding: 10px 10px 10px 10px;
+        @media only screen and (max-width: 568px){
+            max-width:100%;
+            min-width:100%;
+        }
+        p{
+            color: #fff;
+            margin: 0;
+            line-height: 22px;
+        }
+    }
+}
+
+.clientLogo{
+    background:$lightBlue-color;
+    width: 100%;
+    position: relative;
+}
+
+.brands_item {
+    width:100%;
+    img {
+        max-width: 100%
+    }
+}
+
+.brands_nav {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.brands_nav i {
+    color:$white;
+    font-size:70px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease
+}
+
+.brands_nav:hover i {
+    color: $yellow-color;
+}
+
+.brands_prev {
+    left: -60px;
+}
+
+.brands_next {
+    right: -45px;
+}
+
+.serviceContent{
+    h2{
+        font-size:20px;
+        color:$lightBlue-color;
+        font-weight:600;
+    }
+}
+
+.serviceContentText{
+    h2{
+        color:$lightBlue-color;
+        padding: 10px 0px 10px 0px;
+        margin: 0px;
+    }
+    h3{
+        color:$lightBlack-color;
+        padding: 10px 0px;
+        margin: 0px;
+    }
+    p{
+        color:$lightBlack-color;
+        strong{
+            color:$lightBlack-color;
+            font-weight:500;
+        }
+    }
+    ul{
+        margin: 0px;
+        padding: 10px 0px 10px 0px;
+        list-style: none;
+        li{
+            position: relative;
+            padding-left: 28px;
+            line-height: 25px;
+            padding-bottom: 15px;
+            font-size: 14px;
+            color:$lightBlack-color;
+            font-size:17px;
+            &:before {
+                position: absolute;
+                top: 6px;
+                left: 0;
+                content: "\f054";
+                color: #5188c7;
+                font: 18px/1 FontAwesome;
+            }
+            p {
+                padding:0px;
+                margin:0px;
+                font-weight:300;
+                strong{
+                    font-weight:500;
+                }
+            }
+        }
+    }
+}
+
+
+.mobileappTecList{
+    background: $lightBlue-color;
+    display: block;
+    padding: 20px 10px;
+    color:$white;
+    i{
+        font-size:50px;
+        margin-bottom: 10px;
+    }
+    h5{
+        letter-spacing: 0.8px;
+    }
+    &:hover{
+        background: $lightBlue-hover-color;
+        color:$white;
+    }
+}
+
+.expBorderBox{
+    border: $lightBlue-color solid 2px;
+    border-radius:3px;
+    display: block;
+    padding: 20px 15px;
+    max-height:236px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    i{
+        font-size:50px;
+        margin-bottom: 10px;
+    }
+    h5{
+        letter-spacing: 0.8px;
+    }
+    &:hover{
+        background: $lightBlue-hover-color;
+        color:$white;
+    }
+}

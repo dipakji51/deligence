@@ -1,0 +1,53 @@
+testimonial:
+  - clientImage: "/img/clientReview/shane-schieffer.jpg"
+    name: "Shane Schieffer"
+    designation: "Founder & CEO"
+    companyName: "Gusto Technologies, Inc. (USA)"
+    content: "In seeking offshore help I gave 3 companies the exact same 2-week test task. Deligence achieved the highest quality when the code was reviewed by our senior developer"
+    alternative: "Client Review"
+    rating:
+      - star : "fa fa-star checked"
+      - star : "fa fa-star checked"
+      - star : "fa fa-star checked"
+      - star : "fa fa-star checked"
+      - star : "fa fa-star checked"
+
+  - clientImage : "/img/clientReview/bill-quimby.jpg"
+    name: "Bill Quimby"
+    designation: "President"
+    companyName: "Tollfreenumbers.com (USA)"
+    content: "The finished platform performed reliably and demonstrated excellent fine-tuning of the original vision. Deligence Technologies’ clear communication,"
+    alternative: "Client Review"
+    rating:
+      - star : "fa fa-star checked"
+      - star : "fa fa-star checked"
+      - star : "fa fa-star checked"
+      - star : "fa fa-star checked"
+      - star : "fa fa-star checked"
+
+
+  - clientImage: "/img/clientReview/michael-zetterlund.jpg"
+    name: "Michael Zetterlund"
+    designation: "Product Marketing Director"
+    companyName: "Ariane Systems (France)"
+    content: "Traffic to the website has doubled, and the number of contracts through the website has quadrupled. Although the quality of their work could be improved in"
+    alternative: "Client Review"
+    rating:
+      - star : "fa fa-star checked"
+      - star : "fa fa-star checked"
+      - star : "fa fa-star checked"
+      - star : "fa fa-star checked"
+      - star : "fa fa-star"
+
+  - clientImage: "/img/clientReview/shashank-kouloorkar.jpg"
+    name: "Shashank Kouloorkar"
+    designation: "Technical Support Engr."
+    companyName: "Touch Panel Control Ltd (Australia)"
+    content: "Really helpful and knowledgeable team! I applaud the management and the dev team for the continued support. The team delivers excellent quality of work in less time."
+    alternative: "Client Review"
+    rating:
+      - star : "fa fa-star checked"
+      - star : "fa fa-star checked"
+      - star : "fa fa-star checked"
+      - star : "fa fa-star checked"
+      - star : "fa fa-star checked"

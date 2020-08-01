@@ -1,0 +1,22 @@
+title: "What Our Clients Say"
+clients:
+  - clientImage : "img/clientReview/theresa.jpg"
+    active : "active"
+    name : "Theresa Jorgensen"
+    designation : "Owner, SixSuitcaseTravel (USA)"
+    text : "I consider them part of my website team, and know I can count on them for fast, high-quality work.
+    Deligence Technologies Pvt. Ltd. substantially decreased the website’s bounce rate. Attentive communication and prompt delivery make them a reliable partner."
+    
+  - clientImage : "img/clientReview/stephen-o-brien.jpg"
+    active : ""
+    name : "Stephen O'Brien"
+    designation : "Founder, Doqumi Inc (Australia)"
+    text : "Word for Windows / Office 365 JavaScript API Add-On
+    Deligence Technologie's team member joined the team partially through the project and quickly proved his high level of talent and dedication by quickly meeting our goals and making additional contributions that exceeded our expectations. I highly recommend him, and will be looking forward to working with him again in the future.
+    "
+    
+  - clientImage : "img/clientReview/james-tredray.jpg"
+    active : ""
+    name : "James Tredray"
+    designation : "Director of JT Creative Media (England, UK)"
+    text : "Sanjay and his team completed the job well. They responded to all my comments regarding issues with the work and solved them without complaint."

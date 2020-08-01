@@ -1,0 +1,23 @@
+<section class="sec-padding">
+   <div class="main-title">
+      {{ with .Site.Data.homepage.ourclients }}
+         <h1 class="text-center">{{.title }}</h1>
+      {{ end }}
+   </div>
+   <div class="container">
+      <div class="row">
+         {{ range first 11 .Site.Data.clients.list.item }}
+            <div class="col-sm-3">
+               <div class="ourClientLogo text-center imghover d-flex align-items-center justify-content-center">
+                  <div class="imghover-overlay"></div>
+                  <img class="imghover-image img-fluid" src="{{ .image | relURL }}" alt="{{.alternative }}" />
+                  <div class="imghover-details fadeIn-bottom d-flex flex-wrap align-items-center justify-content-center">
+                     <h5 class="imghover-title"> {{ .name }} </h5>
+                     <p class="imghover-text"> {{ .country}} </p>
+                  </div>
+               </div>
+            </div>
+         {{ end }}
+      </div>
+   </div>
+</section>

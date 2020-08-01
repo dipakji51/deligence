@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+   {{ partial "breadcrumbs.html" . }}   
+    <div class="content pt-3 pb-3 tripleYourMonthly"> 
+        <div class="container">
+            {{ .Content }}
+        </div>  
+    </div>
+    {{ range .Site.Data.footer.home }}  
+    <section class="bg-dark portfolioFooterBG footerBGHeight w-100 home"  style="background-image: url('{{ .image | relURL }}');">
+        <div class="footer-overlay d-flex align-items-center justify-content-center">
+            <div class="container">
+                <h2 class="text-white text-center"> {{ .title }} </h2>
+                <a href="{{ .link | relURL}} "> <span class="text-center arrowicon"> <i class="fa fa-angle-down"></i> </span> </a>
+            </div>
+        </div> 
+    </section>
+    
+    {{ end }}
+{{ end }}
