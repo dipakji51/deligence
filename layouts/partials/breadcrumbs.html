@@ -4,8 +4,16 @@
   <div class="container">
     <h1 class="text-center text-white">{{ .Params.subTitle}}</h1>
     <p class="text-center text-white">  {{ .Params.smallTextWhite }} <br/> 
-      <span class="yellow-text"> {{ .Params.smallTextYellow}} </span>      
+      <span class="yellow-text"> {{ .Params.smallTextYellow}} </span>
+
+       <br> 
+      {{ partial "breadcrumb.html" . }}    
     </p>
+
+
+    
+
+
   </div>
 </div>
 <!--\\ Inner Header --> 

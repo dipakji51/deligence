@@ -1,18 +1,15 @@
-<span class="breadcrumb">
-<a href="/">Home</a>
-{{ template "breadcrumb" dict "currentPage" .Page "id" .UniqueID }}
-</span>
-
-<!-- templates -->
-{{ define "breadcrumb" }}
-{{ if .currentPage.Parent }}
-{{ if ne .currentPage.Parent .IsHome }}
-{{ template "breadcrumb" dict "currentPage" .currentPage.Parent }}
-{{ end }}
-{{ if eq .id .currentPage.UniqueID }}
-{{ .currentPage.Title }}
-{{ else }}
-<a href="{{ .currentPage.URL }}">{{ .currentPage.URL }}</a>
-{{ end }}
-{{ end }}
-{{ end }}
+<section>
+ <div class="bread-container container">
+ {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+ {{ $.Scratch.Add "path" .Site.BaseURL }}
+<a href="/" style="color: #fff;">Home</a>
+   {{ range $index, $element := split $url "/" }}
+     {{ $.Scratch.Add "path" $element }}
+       {{ if ne $element "" }}
+       <span style="color: #fff;">&gt;</span> <a href='{{ $.Scratch.Get "path" }}' style="text-transform: capitalize; color: #fff;">{{ . }}</a>
+       {{ $.Scratch.Add "path" "/" }}
+       {{ end }}
+   {{ end }}
+ 
+ </div>
+ </section>

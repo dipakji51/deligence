@@ -63,15 +63,33 @@
 
 
 
-    
+   {{ if .Params.noindex }}
+   <meta name="robots" content="noindex" />
+   {{ end }} 
    
 
   <!-- Favicon and apple touch icons-->
   <link rel="shortcut icon" href="{{ "img/favicon.ico" | absURL }}" type="image/x-icon" />
   <link rel="apple-touch-icon" href="{{ "img/apple-touch-icon.png" | absURL }}" />
 
+  <!-- Facebook OpenGraph tags -->
+  <!-- <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ .Description}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .URL }}" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image }}" />  -->
    
+ 
   
+  <!-- Twitter Card -->
+   <!--  <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ .Title }}" />
+    <meta name="twitter:description" content="{{ .Description }}" />
+    <meta name="twitter:url"  content="{{ .URL }}" />
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.twImage }}" />        
+    <meta name="twitter:site" content="{{ .Site.Params.deligence1 }}" />
+    <meta name="twitter:creator" content="{{ .Site.Params.deligence1 }}" />
+ -->
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ if ne .URL "/" }}{{ .Title }} &middot; {{ end }}{{ .Site.Title }}"/>
@@ -91,7 +109,8 @@
     <meta property="og:type" content="website"/>
 
 
-    
+    {{ if .Site.Params.twitter_card_whitelisted }}
+        {{ if .Params.twitter_summary }}
     <meta property="twitter:card" content="{{ .Params.twitter_summary }}">
         {{ else if .Description }}
     <meta property="twitter:card" content="{{ .Description }}">
@@ -104,7 +123,7 @@
     {{ if .Params.image }}
     <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.image }}">
     {{ end }}
-    
+    <!-- End of Twitter -->
 
 
  
